@@ -197,7 +197,7 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 		side = 0; // Side is Blufor = 1, Opfor = 0, Indfor = 2, Empty = 8, Civilian = 3 
 		editorCategory = "T17_ChaosInsurgency"; // this is the top level category in the faction list
 		editorSubCategory = "T17_MobileTaskForce"; // this is the smaller category
-		backpack = "" // backpack class name here
+		backpack = ""; // backpack class name here
 		hiddenSelections[] = 
         {
             "camo",
