@@ -1,0 +1,146 @@
+2026-09-22T07:46:38.511521Z TRACE ThreadId(01) version: 1.22.0
+2026-09-22T07:46:38.511586Z TRACE ThreadId(01) platform: windows
+2026-09-22T07:46:38.511596Z TRACE ThreadId(01) args: [
+    "C:\\Users\\Swift\\AppData\\Local\\Microsoft\\WinGet\\Links\\hemtt.exe",
+    "build",
+]
+2026-09-22T07:46:38.512775Z TRACE ThreadId(01) using temporary folder: "C:\\Users\\Swift\\AppData\\Local\\Temp\\hemtt\\theta17"
+2026-09-22T07:46:38.512789Z TRACE ThreadId(01) using project folder: "E:\\theta17"
+2026-09-22T07:46:38.512808Z TRACE ThreadId(01) using out folder: "E:\\theta17\\.hemttout"
+2026-09-22T07:46:38.530522Z TRACE ThreadId(01) using build folder: "E:\\theta17\\.hemttout\\build"
+2026-09-22T07:46:38.638884Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Swift\\AppData\\Local\\Temp\\hemtt\\theta17\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "E:\\theta17" } } } } } }] } } }
+2026-09-22T07:46:38.639088Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Swift\\AppData\\Local\\Temp\\hemtt\\theta17\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "E:\\theta17" } } } } } }] } } }
+2026-09-22T07:46:38.639242Z TRACE ThreadId(01) reading version from project.toml
+2026-09-22T07:46:38.639358Z  INFO ThreadId(01) Config loaded for Theta - 17 Aux Mod 1.0.0.0
+2026-09-22T07:46:38.639386Z TRACE ThreadId(01) Scanning E:\theta17\addons for addons
+2026-09-22T07:46:38.641425Z DEBUG ThreadId(01) using global config directory: "C:\\Users\\Swift\\AppData\\Roaming\\hemtt"
+2026-09-22T07:46:38.641554Z  INFO ThreadId(01) Creating `build` version
+2026-09-22T07:46:38.641574Z TRACE ThreadId(01) phase: init (BOM Check) (start)
+2026-09-22T07:46:38.641579Z TRACE ThreadId(01) phase: init (BOM Check) (done)
+2026-09-22T07:46:38.641581Z TRACE ThreadId(01) phase: init (Final New Line Check) (start)
+2026-09-22T07:46:38.641583Z TRACE ThreadId(01) phase: init (Final New Line Check) (done)
+2026-09-22T07:46:38.641584Z TRACE ThreadId(01) phase: init (git) (start)
+2026-09-22T07:46:38.641586Z TRACE ThreadId(01) phase: init (git) (done)
+2026-09-22T07:46:38.641587Z TRACE ThreadId(01) phase: init (Hooks) (start)
+2026-09-22T07:46:38.641611Z TRACE ThreadId(01) no hooks folder
+2026-09-22T07:46:38.641612Z TRACE ThreadId(01) phase: init (Hooks) (done)
+2026-09-22T07:46:38.641614Z TRACE ThreadId(01) phase: init (pboprefix) (start)
+2026-09-22T07:46:38.641615Z TRACE ThreadId(01) phase: init (pboprefix) (done)
+2026-09-22T07:46:38.641617Z TRACE ThreadId(01) phase: init (Binarize) (start)
+2026-09-22T07:46:38.641626Z TRACE ThreadId(01) Using Binarize path from registry
+2026-09-22T07:46:38.642625Z TRACE ThreadId(01) junction link "C:\\Users\\Swift\\AppData\\Local\\Temp\\hemtt\\theta17\\z\\t17\\addons\\main" => "E:\\theta17\\addons\\main"
+2026-09-22T07:46:38.663075Z TRACE ThreadId(01) phase: init (Binarize) (done)
+2026-09-22T07:46:38.663095Z TRACE ThreadId(01) phase: init (tex_headers) (start)
+2026-09-22T07:46:38.663098Z TRACE ThreadId(01) phase: init (tex_headers) (done)
+2026-09-22T07:46:38.663099Z TRACE ThreadId(01) phase: init (Files) (start)
+2026-09-22T07:46:38.663101Z TRACE ThreadId(01) phase: init (Files) (done)
+2026-09-22T07:46:38.663103Z TRACE ThreadId(01) phase: init (Meta) (start)
+2026-09-22T07:46:38.663104Z TRACE ThreadId(01) phase: init (Meta) (done)
+2026-09-22T07:46:38.663106Z TRACE ThreadId(01) phase: init (summary) (start)
+2026-09-22T07:46:38.663108Z TRACE ThreadId(01) phase: init (summary) (done)
+2026-09-22T07:46:38.663109Z TRACE ThreadId(01) phase: init (Rapifier) (start)
+2026-09-22T07:46:38.663149Z TRACE ThreadId(01) phase: init (Rapifier) (done)
+2026-09-22T07:46:38.663153Z TRACE ThreadId(01) phase: init (SQF) (start)
+2026-09-22T07:46:38.668216Z TRACE ThreadId(01) failed to load arma 3 wiki from git: Failed to clone repository: 'C:\Users\Swift\AppData\Local\acemod\arma3-wiki\data' exists and is not an empty directory; class=Invalid (3); code=Exists (-4) e="Failed to clone repository: 'C:\\Users\\Swift\\AppData\\Local\\acemod\\arma3-wiki\\data' exists and is not an empty directory; class=Invalid (3); code=Exists (-4)"
+2026-09-22T07:46:38.668334Z  WARN ThreadId(01) Failed to load Arma 3 wiki from git, falling back to bundled version
+2026-09-22T07:46:38.729209Z TRACE ThreadId(01) phase: init (SQF) (done)
+2026-09-22T07:46:38.729230Z TRACE ThreadId(01) phase: init (Stringtables) (start)
+2026-09-22T07:46:38.729232Z TRACE ThreadId(01) phase: init (Stringtables) (done)
+2026-09-22T07:46:38.729235Z TRACE ThreadId(01) phase: check (BOM Check) (start)
+2026-09-22T07:46:38.729414Z TRACE ThreadId(01) phase: check (BOM Check) (done)
+2026-09-22T07:46:38.729418Z TRACE ThreadId(01) phase: check (Final New Line Check) (start)
+2026-09-22T07:46:38.729503Z TRACE ThreadId(01) phase: check (Final New Line Check) (done)
+2026-09-22T07:46:38.729505Z TRACE ThreadId(01) phase: check (git) (start)
+2026-09-22T07:46:38.729611Z TRACE ThreadId(01) phase: check (git) (done)
+2026-09-22T07:46:38.729613Z TRACE ThreadId(01) phase: check (Hooks) (start)
+2026-09-22T07:46:38.729614Z TRACE ThreadId(01) phase: check (Hooks) (done)
+2026-09-22T07:46:38.729616Z TRACE ThreadId(01) phase: check (pboprefix) (start)
+2026-09-22T07:46:38.729620Z TRACE ThreadId(01) Checking prefixes against expected project path: z\t17\
+2026-09-22T07:46:38.729806Z TRACE ThreadId(01) phase: check (pboprefix) (done)
+2026-09-22T07:46:38.729809Z TRACE ThreadId(01) phase: check (Binarize) (start)
+2026-09-22T07:46:38.730344Z  INFO ThreadId(01) Validated 0 files for binarization
+2026-09-22T07:46:38.730356Z TRACE ThreadId(01) phase: check (Binarize) (done)
+2026-09-22T07:46:38.730358Z TRACE ThreadId(01) phase: check (tex_headers) (start)
+2026-09-22T07:46:38.730361Z TRACE ThreadId(01) phase: check (tex_headers) (done)
+2026-09-22T07:46:38.730363Z TRACE ThreadId(01) phase: check (Files) (start)
+2026-09-22T07:46:38.730364Z TRACE ThreadId(01) phase: check (Files) (done)
+2026-09-22T07:46:38.730366Z TRACE ThreadId(01) phase: check (Meta) (start)
+2026-09-22T07:46:38.730367Z TRACE ThreadId(01) phase: check (Meta) (done)
+2026-09-22T07:46:38.730369Z TRACE ThreadId(01) phase: check (summary) (start)
+2026-09-22T07:46:38.730370Z TRACE ThreadId(01) phase: check (summary) (done)
+2026-09-22T07:46:38.730372Z TRACE ThreadId(01) phase: check (Rapifier) (start)
+2026-09-22T07:46:38.730421Z TRACE ThreadId(01) phase: check (Rapifier) (done)
+2026-09-22T07:46:38.730423Z TRACE ThreadId(01) phase: check (SQF) (start)
+2026-09-22T07:46:38.730483Z TRACE ThreadId(01) phase: check (SQF) (done)
+2026-09-22T07:46:38.730485Z TRACE ThreadId(01) phase: check (Stringtables) (start)
+2026-09-22T07:46:38.730508Z TRACE ThreadId(01) phase: check (Stringtables) (done)
+2026-09-22T07:46:38.730510Z TRACE ThreadId(01) phase: pre_build (BOM Check) (start)
+2026-09-22T07:46:38.730511Z TRACE ThreadId(01) phase: pre_build (BOM Check) (done)
+2026-09-22T07:46:38.730513Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (start)
+2026-09-22T07:46:38.730514Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (done)
+2026-09-22T07:46:38.730516Z TRACE ThreadId(01) phase: pre_build (git) (start)
+2026-09-22T07:46:38.730518Z TRACE ThreadId(01) phase: pre_build (git) (done)
+2026-09-22T07:46:38.730519Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
+2026-09-22T07:46:38.730522Z TRACE ThreadId(01) phase: pre_build (Hooks) (done)
+2026-09-22T07:46:38.730524Z TRACE ThreadId(01) phase: pre_build (pboprefix) (start)
+2026-09-22T07:46:38.730525Z TRACE ThreadId(01) phase: pre_build (pboprefix) (done)
+2026-09-22T07:46:38.730527Z TRACE ThreadId(01) phase: pre_build (Binarize) (start)
+2026-09-22T07:46:38.730741Z  INFO ThreadId(01) Binarized 0 files
+2026-09-22T07:46:38.730754Z TRACE ThreadId(01) phase: pre_build (Binarize) (done)
+2026-09-22T07:46:38.730758Z TRACE ThreadId(01) phase: pre_build (tex_headers) (start)
+2026-09-22T07:46:38.731788Z DEBUG ThreadId(01) Writing texture headers to "/addons/main/texHeaders.bin"
+2026-09-22T07:46:38.732175Z  INFO ThreadId(01) Generated 1 texture headers
+2026-09-22T07:46:38.732186Z TRACE ThreadId(01) phase: pre_build (tex_headers) (done)
+2026-09-22T07:46:38.732189Z TRACE ThreadId(01) phase: pre_build (Files) (start)
+2026-09-22T07:46:38.732190Z TRACE ThreadId(01) phase: pre_build (Files) (done)
+2026-09-22T07:46:38.732192Z TRACE ThreadId(01) phase: pre_build (Meta) (start)
+2026-09-22T07:46:38.732193Z TRACE ThreadId(01) phase: pre_build (Meta) (done)
+2026-09-22T07:46:38.732195Z TRACE ThreadId(01) phase: pre_build (summary) (start)
+2026-09-22T07:46:38.732197Z TRACE ThreadId(01) phase: pre_build (summary) (done)
+2026-09-22T07:46:38.732198Z TRACE ThreadId(01) phase: pre_build (Rapifier) (start)
+2026-09-22T07:46:38.772885Z  INFO ThreadId(01) Rapified 1 addon configs
+2026-09-22T07:46:38.772927Z TRACE ThreadId(01) phase: pre_build (Rapifier) (done)
+2026-09-22T07:46:38.772930Z TRACE ThreadId(01) phase: pre_build (SQF) (start)
+2026-09-22T07:46:38.773697Z  INFO ThreadId(01) Compiled 0 sqf files
+2026-09-22T07:46:38.773745Z TRACE ThreadId(01) phase: pre_build (SQF) (done)
+2026-09-22T07:46:38.773748Z TRACE ThreadId(01) phase: pre_build (Stringtables) (start)
+2026-09-22T07:46:38.774458Z  INFO ThreadId(01) Checked 0 stringtables
+2026-09-22T07:46:38.774473Z TRACE ThreadId(01) phase: pre_build (Stringtables) (done)
+2026-09-22T07:46:38.774476Z TRACE ThreadId(01) phase: build (start)
+2026-09-22T07:46:38.774698Z DEBUG ThreadId(01) creating "E:\\theta17\\.hemttout\\build\\addons"
+2026-09-22T07:46:38.793268Z DEBUG ThreadId(01) building "addons/main" => "E:\\theta17\\.hemttout\\build\\addons\\t17_main.pbo"
+2026-09-22T07:46:38.793771Z TRACE ThreadId(01) adding file "texHeaders.bin"
+2026-09-22T07:46:38.793817Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-22T07:46:38.793964Z TRACE ThreadId(01) adding file "textures\\T17Insignia.paa"
+2026-09-22T07:46:38.794025Z TRACE ThreadId(01) adding file "textures\\T17CombatShirt_CO.paa"
+2026-09-22T07:46:38.874821Z  INFO ThreadId(01) Built 1 PBOs
+2026-09-22T07:46:38.874845Z TRACE ThreadId(01) phase: build (done)
+2026-09-22T07:46:38.874849Z TRACE ThreadId(01) phase: post_build (BOM Check) (start)
+2026-09-22T07:46:38.874852Z TRACE ThreadId(01) phase: post_build (BOM Check) (done)
+2026-09-22T07:46:38.874853Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (start)
+2026-09-22T07:46:38.874855Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (done)
+2026-09-22T07:46:38.874857Z TRACE ThreadId(01) phase: post_build (git) (start)
+2026-09-22T07:46:38.874858Z TRACE ThreadId(01) phase: post_build (git) (done)
+2026-09-22T07:46:38.874860Z TRACE ThreadId(01) phase: post_build (Hooks) (start)
+2026-09-22T07:46:38.874862Z TRACE ThreadId(01) phase: post_build (Hooks) (done)
+2026-09-22T07:46:38.874863Z TRACE ThreadId(01) phase: post_build (pboprefix) (start)
+2026-09-22T07:46:38.874864Z TRACE ThreadId(01) phase: post_build (pboprefix) (done)
+2026-09-22T07:46:38.874866Z TRACE ThreadId(01) phase: post_build (Binarize) (start)
+2026-09-22T07:46:38.874868Z TRACE ThreadId(01) phase: post_build (Binarize) (done)
+2026-09-22T07:46:38.874869Z TRACE ThreadId(01) phase: post_build (tex_headers) (start)
+2026-09-22T07:46:38.874871Z TRACE ThreadId(01) phase: post_build (tex_headers) (done)
+2026-09-22T07:46:38.874872Z TRACE ThreadId(01) phase: post_build (Files) (start)
+2026-09-22T07:46:38.876689Z  INFO ThreadId(01) Copied 0 files
+2026-09-22T07:46:38.876708Z TRACE ThreadId(01) phase: post_build (Files) (done)
+2026-09-22T07:46:38.876711Z TRACE ThreadId(01) phase: post_build (Meta) (start)
+2026-09-22T07:46:38.876713Z TRACE ThreadId(01) phase: post_build (Meta) (done)
+2026-09-22T07:46:38.876714Z TRACE ThreadId(01) phase: post_build (summary) (start)
+2026-09-22T07:46:38.900150Z TRACE ThreadId(01) phase: post_build (summary) (done)
+2026-09-22T07:46:38.900175Z TRACE ThreadId(01) phase: post_build (Rapifier) (start)
+2026-09-22T07:46:38.900179Z TRACE ThreadId(01) phase: post_build (Rapifier) (done)
+2026-09-22T07:46:38.900181Z TRACE ThreadId(01) phase: post_build (SQF) (start)
+2026-09-22T07:46:38.900190Z TRACE ThreadId(01) phase: post_build (SQF) (done)
+2026-09-22T07:46:38.900192Z TRACE ThreadId(01) phase: post_build (Stringtables) (start)
+2026-09-22T07:46:38.900193Z TRACE ThreadId(01) phase: post_build (Stringtables) (done)
+2026-09-22T07:46:38.904552Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
+2026-09-22T07:46:38.904620Z TRACE ThreadId(01) wrote 0 ci annotations to .hemttout/ci_annotations.txt
