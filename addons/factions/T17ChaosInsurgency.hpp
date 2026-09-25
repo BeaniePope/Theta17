@@ -10,6 +10,7 @@ class East // East is Opfor, West is Blufor - Independent is Independent, Civili
             From here down, this is old unedited config i wrote for a star wars unit. 
             You can use the script I sent you and replace these as needed, or remake them 1 by 1. 
             Make sure to replace all the classnames and the "dlc" tag with ours. If you leave even one erroneous tag, the config will break in game
+            Queen is a chud
         */
         class T17_ChaosInsurgency_Groups 
         { 
