@@ -1,14 +1,17 @@
-class East 
+class East // East is Opfor, West is Blufor - Independent is Independent, Civilian is Civilian.
 { 
-    name = "$STR_A3_CfgGroups_East0"; 
+    name = "$STR_A3_CfgGroups_East0"; // base arma stringtable assocation. used for language localization. just replace east with west and so on.
     side = 0; 
 
     class T17_Zeus_Spacer 
     {
-        name = "[Theta - 17] Chaos Insurgency"; 
-
-        // Rebel Alliance
-        class T17_ChaosInsurgency_Groups
+        name = "[Theta - 17] Chaos Insurgency"; // Spacer for the groups so that they aren't weirdly formatted
+        /*
+            From here down, this is old unedited config i wrote for a star wars unit. 
+            You can use the script I sent you and replace these as needed, or remake them 1 by 1. 
+            Make sure to replace all the classnames and the "dlc" tag with ours. If you leave even one erroneous tag, the config will break in game
+        */
+        class T17_ChaosInsurgency_Groups 
         { 
             dlc = "AWR"; 
             name = "Infantry"; 
