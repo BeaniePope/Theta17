@@ -1,6 +1,6 @@
 class T17_MCD_Spacer
 {
-    name = "[T17] ]Marshal, Carter & Dark Inc.";
+    name = "[T17] Marshal, Carter & Dark Inc.";
     class T17_MCD_PrivateSecurity
     {
         name = "Private Security";
