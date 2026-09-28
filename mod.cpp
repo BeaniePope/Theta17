@@ -1,0 +1,14 @@
+name = "Theta-17 Additions";
+picture = "";
+actionName = "";
+action = "";
+logoSmall = "logo_ca.paa";
+logo = "logo_ca.paa";
+logoOver = "logo_ca.paa";
+tooltip = "Theta-17 Additions";
+tooltipOwned = "Theta-17 Additions";
+description = "Theta-17 Additions";
+overview  = "Theta-17 Additions";
+author = "Scout, Queen & Friends";
+hidePicture = 0;
+hideName = 0;

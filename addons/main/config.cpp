@@ -13,8 +13,7 @@ class CfgPatches
 		requiredVersion = 2.22;
 		units[] = 
         {
-            "T17_Unit",
-			"T17_ChaosInsurgency_Rifleman_Unit" // Every unit you make has to be defined here, or else zeus can't access it.
+            "T17_Unit" // Every unit you make has to be defined here, or else zeus can't access it.
         };
 		weapons[] = 
         {
@@ -40,11 +39,35 @@ class CfgEditorCategories // Top level category for the list. Think NATO, CSAT, 
     };
 };
 
+class CfgFactionClasses
+{
+	class T17_ChaosInsurgency_Faction
+	{
+		displayName = "[T17] Chaos Insurgency";
+		priority = 1;
+		side = 0;
+		icon = "\z\t17\addons\main\textures\icons\ciicon_ca.paa";
+		flag = "\z\t17\addons\main\textures\flags\ciflag_ca.paa";
+	};
+};
+
 class CfgEditorSubcategories // Intermediate Category for the list. Think Men (Pacific), Armor, Aircraft
 {
 	class T17_MobileTaskForce
 	{
 		displayName = "Mobile Task Force"; 
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+	class T17_ChaosInsurgency_BetaClass
+	{
+		displayName = "Beta-Class Personnel";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+	class T17_ChaosInsurgency_AlphaClass
+	{
+		displayName = "Alpha-Class Personnel";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
@@ -181,83 +204,4 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 			"ItemRadio"
 		};
     };
-	class T17_ChaosInsurgency_Rifleman_Unit: B_Soldier_F // All of your classnames should have "T17" appended to them. No classnames should be the same. Try to keep them descriptive so it's easy to distinguish when there's a ton of them.
-	{
-		author = "Queen"; // you (or me, in this instance!)
-        displayName = "Rifleman"; // The name displayed in the list.
-		scope = 2; // Scope should equal 2, 1 is editor only, 0 is it will never show up ingame unless called via script.
-		identityTypes[] = 
-		{
-			"LanguageENG_F",
-			"Head_NATO",
-			"NoGlasses"
-		}; // You can define different faces, voices and facewear here. it will choose a random one from the list for each.
-		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; // the model path for the uniform you want to use is defined here
-		uniformClass = "T17_CombatShirt_Item"; // the actual classname for the uniform item here
-		side = 0; // Side is Blufor = 1, Opfor = 0, Indfor = 2, Empty = 8, Civilian = 3 
-		editorCategory = "T17_ChaosInsurgency"; // this is the top level category in the faction list
-		editorSubCategory = "T17_MobileTaskForce"; // this is the smaller category
-		backpack = ""; // backpack class name here
-		hiddenSelections[] = 
-        {
-            "camo",
-            "insignia" 
-        };
-        hiddenSelectionsTextures[] = 
-        {
-            "\z\t17\addons\main\textures\T17CombatShirt_CO.paa",
-            "\z\t17\addons\main\textures\T17Insignia.paa"
-        }; 
-		/*
-			HiddenSelections and HiddenSelectionsTextures exist in order to provide a way for you
-			to retexture assets. If you aren't retexturing anything, you MUST remove them.
-		*/
-		weapons[]= // Weapons are defined here. Throw is for grenades, Put is for explosives. remove if you dont want them to use either or.
-		{
-			"hlc_wp_C7",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]= // This defines what weapons they respawn with. Generally, these should be kept the same. Same as above.
-		{
-			"hlc_wp_C7",
-			"Throw",
-			"Put"
-		};
-		magazines[]= // Magazines and all other throwables are here. 
-		{
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			MAG_5("hlc_30rnd_556x45_EPR")
-
-		};
-		respawnMagazines[]= // Ones accessible on respawn.
-		{
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			MAG_5("hlc_30rnd_556x45_EPR")
-		};
-		linkedItems[]= // Additional items given to the units. 
-		{
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-	};
 };
