@@ -17,7 +17,8 @@ class CfgPatches
         };
 		weapons[] = 
         {
-            "T17_CombatShirt_Item" // Same for weapons /  items.
+            "T17_CombatShirt_Item", // Same for weapons /  items.
+			"T17_MCD_Suit_Item"
         };
     };
 };
@@ -37,6 +38,12 @@ class CfgEditorCategories // Top level category for the list. Think NATO, CSAT, 
         scopeCurator = 2;
         scopeEditor = 2;
     };
+	class T17_MCD
+    {
+        displayName = "[T17] Marshall, Carter, & Dark Inc.";
+        scopeCurator = 2;
+        scopeEditor = 2;
+    };
 };
 
 class CfgFactionClasses
@@ -48,6 +55,14 @@ class CfgFactionClasses
 		side = 0;
 		icon = "\z\t17\addons\main\textures\icons\ciicon_ca.paa";
 		flag = "\z\t17\addons\main\textures\flags\ciflag_ca.paa";
+	};
+	class T17_MCD_Faction
+	{
+		displayName = "[T17] Marshall, Carter & Dark";
+		priority = 1;
+		side = 0;
+		icon = "\z\t17\addons\main\textures\icons\mcdicon_ca.paa";
+		flag = "";
 	};
 };
 
@@ -71,12 +86,25 @@ class CfgEditorSubcategories // Intermediate Category for the list. Think Men (P
         scopeCurator = 2;
         scopeeditor = 2;
 	};
+	class T17_MCD_Security
+	{
+		displayName = "Private Security";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+	class T17_MCD_TRO
+	{
+		displayName = "Tactical Response Operators";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
 };
 
 class CfgWeapons
 {
     class U_B_CombatUniform_mcam_vest;
     class UniformItem;
+	class Uniform_Base;
 
     class T17_CombatShirt_Item: U_B_CombatUniform_mcam_vest
     {
@@ -90,6 +118,25 @@ class CfgWeapons
 			mass=40;
 		};
     };
+	class T17_MCD_Suit_Item: Uniform_Base
+	{
+		author = "Queen";
+		scope = 2;
+		displayName = "[T17] Marshall, Carter & Dark Uniform";
+		picture = "\a3\Characters_F_AoW\Uniforms\data\ui\icon_U_C_FormalSuit_01_black_F_ca.paa";
+		model = "\a3\Characters_F_AoW\Uniforms\Suitpacks\suitpack_FormalSuit_01_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\a3\Characters_F_AoW\Uniforms\Suitpacks\data\suitpack_FormalSuit_01_black_CO.paa"};
+		DLC = "T17";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "T17_MCD_Suit_Uniform";
+			containerClass = "Supply20";
+			mass = 30;
+		};
+	};
+
 };
 
 class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same thing. Blame Bohemia 
@@ -135,17 +182,23 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 
 	// Units
     class B_Soldier_F; // This is the base BI soldier. It provides the basic template so that game knows its dealing with a human soldier.
-    class T17_Unit: B_Soldier_F 
+    class T17_Unit: B_Soldier_F // All of your classnames should have "T17" appended to them. No classnames should be the same. Try to keep them descriptive so it's easy to distinguish when there's a ton of them.
     {
-        author = "Queen";
-        displayName = "Operator (Rifleman)";
-		scope = 2;
-		identityTypes[] = {};
-		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-		uniformClass = "T17_CombatShirt_Item";
-		side = 2;
-		editorCategory = "T17_Theta17";
-		editorSubCategory = "T17_MobileTaskForce";
+        author = "Queen";  // you (or me, in this instance!)
+        displayName = "Operator (Rifleman)"; // The name displayed in the list.
+		scope = 2; // Scope should equal 2, 1 is editor only, 0 is it will never show up ingame unless called via script.
+		identityTypes[] = 
+		{
+			"LanguageENG_F",
+			"Head_NATO",
+			"NoGlasses"
+		}; // You can define different faces, voices and facewear here. it will choose a random one from the list for each.
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; // the model path for the uniform you want to use is defined here
+		uniformClass = "T17_CombatShirt_Item";  // the actual classname for the uniform item that is connected to this here
+		side = 2;  // Side is Blufor = 1, Opfor = 0, Indfor = 2, Empty = 8, Civilian = 3 
+		editorCategory = "T17_Theta17";  // this is the top level category in the faction list
+		editorSubCategory = "T17_MobileTaskForce"; // this is the smaller category
+		backpack = ""; // backpack class name here
 		hiddenSelections[] = 
         {
             "camo",
@@ -156,19 +209,23 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
             "\z\t17\addons\main\textures\T17CombatShirt_CO.paa", // I know this path looks weird, it's how hemtt does it. You can extrapolate how to do it yourself, ask if you need help <3
             "\z\t17\addons\main\textures\T17Insignia.paa"
         };
-		weapons[]=
+		/*
+			HiddenSelections and HiddenSelectionsTextures exist in order to provide a way for you
+			to retexture assets. If you aren't retexturing anything, you MUST remove them.
+		*/
+		weapons[]= // Weapons are defined here. Throw is for grenades, Put is for explosives. remove if you dont want them to use either or.
 		{
 			"hlc_wp_C7",
 			"Throw",
 			"Put"
 		};
-		respawnWeapons[]=
+		respawnWeapons[]=  // This defines what weapons they respawn with. Generally, these should be kept the same. Same as above.
 		{
 			"hlc_wp_C7",
 			"Throw",
 			"Put"
-		};
-		magazines[]=
+		}; 
+		magazines[]= // Magazines and all other throwables are here. 
 		{
 			"HandGrenade",
 			"HandGrenade",
@@ -179,7 +236,7 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 			MAG_5("hlc_30rnd_556x45_EPR")
 
 		};
-		respawnMagazines[]=
+		respawnMagazines[]= // Ones accessible on respawn.
 		{
 			"HandGrenade",
 			"HandGrenade",
@@ -189,7 +246,7 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 			"Chemlight_green",
 			MAG_5("hlc_30rnd_556x45_EPR")
 		};
-		linkedItems[]=
+		linkedItems[]= // Additional items given to the units. 
 		{
 			"ItemMap",
 			"ItemCompass",
@@ -204,4 +261,18 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 			"ItemRadio"
 		};
     };
+
+	class C_Uniform_FormalSuit_01_base_F;
+	class T17_MCD_Suit_Uniform: C_Uniform_FormalSuit_01_base_F
+	{
+		author = "Queen";
+		uniformClass = "T17_MCD_Suit_Item";
+		model = "\a3\Characters_F_AoW\Uniforms\FormalSuit_01_F";
+		scope = 1;
+		hiddenSelectionsTextures[] = 
+		{
+			"\z\t17\addons\main\textures\MCD_Suit_CO.paa"
+		};
+	};
+
 };
