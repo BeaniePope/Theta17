@@ -33,6 +33,7 @@ class T17_MCD_PrivateSecurity: T17_MCD_Base_Unit
     displayName = "Private Security";
 
     uniformClass = "T17_MCD_Suit_Item";
+    //nakedUniform = "T17_MCD_Suit_Item";
     backpack = "";
     weapons[] =
     {
@@ -96,6 +97,7 @@ class T17_MCD_PrivateSecurity_LightCombat: T17_MCD_Base_Unit
     displayName = "Private Security - Light Combat";
 
     uniformClass = "T17_MCD_Suit_Item";
+    //nakedUniform = "T17_MCD_Suit_Item";
     backpack = "";
     weapons[] =
     {
@@ -170,6 +172,7 @@ class T17_MCD_PrivateSecurity_LightCombatRifleman: T17_MCD_Base_Unit
     scopeCurator = 2;
     displayName = "Private Security - Rifleman";
     uniformClass = "T17_MCD_Suit_Item";
+    //nakedUniform = "T17_MCD_Suit_Item";
     backpack = "";
     weapons[] =
     {
@@ -250,6 +253,7 @@ class T17_MCD_TRO_Rifleman: T17_MCD_Base_Unit
     displayName = "TRO - Rifleman";
     editorSubcategory = "T17_MCD_TRO";
     uniformClass = "MLO_OGA_Crye_SS_Black_Camo";
+    //nakedUniform = "MLO_OGA_Crye_SS_Black_Camo";
     backpack = "B_Kitbag_blk";
 
     weapons[] =
@@ -348,6 +352,10 @@ class T17_MCD_TRO_Rifleman: T17_MCD_Base_Unit
         "ItemCompass",
         "KAT_Cavmin",
         "SC_GPNVG"
+    };
+    class EventHandlers
+    {
+        init = "params ['_unit']; _unit forceAddUniform 'MLO_OGA_Crye_SS_Black_Camo'";
     };
 };
 
@@ -359,6 +367,7 @@ class T17_MCD_TRO_DMR: T17_MCD_Base_Unit
     displayName = "TRO - DMR";
     editorSubcategory = "T17_MCD_TRO";
     uniformClass = "MLO_OGA_Crye_SS_Black_Camo";
+    //nakedUniform = "MLO_OGA_Crye_SS_Black_Camo";
     backpack = "B_Kitbag_blk";
 
     weapons[] =
@@ -457,6 +466,10 @@ class T17_MCD_TRO_DMR: T17_MCD_Base_Unit
         "ItemCompass",
         "KAT_Cavmin",
         "SC_GPNVG"
+    };
+    class EventHandlers
+    {
+        init = "params ['_unit']; _unit forceAddUniform 'MLO_OGA_Crye_SS_Black_Camo'";
     };
 };
 
@@ -469,6 +482,7 @@ class T17_MCD_TRO_MG: T17_MCD_Base_Unit
     displayName = "TRO - MG";
     editorSubcategory = "T17_MCD_TRO";
     uniformClass = "MLO_OGA_Crye_SS_Black_Camo";
+    //nakedUniform = "MLO_OGA_Crye_SS_Black_Camo";
     backpack = "B_Kitbag_blk";
 
     weapons[] =
@@ -564,6 +578,10 @@ class T17_MCD_TRO_MG: T17_MCD_Base_Unit
         "KAT_Cavmin",
         "SC_GPNVG"
     };
+    class EventHandlers
+    {
+        init = "params ['_unit']; _unit forceAddUniform 'MLO_OGA_Crye_SS_Black_Camo'";
+    };
 };
 
 class T17_MCD_TRO_RTO: T17_MCD_Base_Unit
@@ -574,6 +592,7 @@ class T17_MCD_TRO_RTO: T17_MCD_Base_Unit
     displayName = "TRO - RTO";
     editorSubcategory = "T17_MCD_TRO";
     uniformClass = "MLO_OGA_Crye_SS_Black_Camo";
+    //nakedUniform = "MLO_OGA_Crye_SS_Black_Camo";
     backpack = "MTF_FCPC_117G_veil";
 
     weapons[] =
@@ -672,5 +691,9 @@ class T17_MCD_TRO_RTO: T17_MCD_Base_Unit
         "ItemCompass",
         "KAT_Cavmin",
         "SC_GPNVG"
+    };
+    class EventHandlers
+    {
+        init = "params ['_unit']; _unit forceAddUniform 'MLO_OGA_Crye_SS_Black_Camo'";
     };
 };

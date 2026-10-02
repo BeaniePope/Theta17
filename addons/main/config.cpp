@@ -20,8 +20,7 @@ class CfgPatches
         {
             "T17_CombatShirt_Item", // Same for weapons /  items.
 			"T17_MCD_Suit_Item",
-			"T17_AR_Uniform_Item",
-			"T17_AR_Rifle"
+			"T17_AR_Uniform_Item"
         };
     };
 };
@@ -188,22 +187,12 @@ class CfgWeapons
 		};
 	};
 
-	class arifle_MSBS65_black_F;
-	class T17_AR_Rifle: arifle_MSBS65_black_F
-	{
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsMaterials[] = {"\z\t17\addons\main\textures\AR_MSBS_01.rvmat", "\z\t17\addons\main\textures\AR_MSBS_02.rvmat"};
-		hiddenSelectionsTextures[] = {"\z\t17\addons\main\textures\T17_AR_MSBS_01_CO.paa", "\z\t17\addons\main\textures\T17_AR_MSBS_02_CO.paa"};
-		displayName = "Anderson Robotics Type 115 ER";
-		BaseWeapon = "T17_AR_Rifle";
-		// picture = "\SSV_Common\SSV_logo_co.paa";
-		// icon = "\SSV_Common\SSV_logo_co.paa";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-	};
+	
+	
 
 };
+
+
 
 class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same thing. Blame Bohemia 
 {
@@ -335,6 +324,7 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 		uniformClass = "T17_MCD_Suit_Item";
 		model = "\a3\Characters_F_AoW\Uniforms\FormalSuit_01_F";
 		scope = 1;
+		side = 0;
 		hiddenSelectionsTextures[] = 
 		{
 			"\z\t17\addons\main\textures\MCD_Suit_CO.paa"
@@ -347,6 +337,7 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 		author = "Queen";
 		uniformClass = "T17_AR_Uniform_Item";
 		scope = 1;
+		side = 0;
 		hiddenSelections[] = 
 		{
 			"camo"

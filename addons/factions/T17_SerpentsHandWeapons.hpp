@@ -1,5 +1,4 @@
 class arifle_AKM_F;
-class launch_MRAWS_green_F;
 class hlc_pistol_P226R;
 class hlc_rifle_rpk74n;
 class hlc_rifle_awmagnum;

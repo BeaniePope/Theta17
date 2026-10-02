@@ -26,7 +26,12 @@ class CfgPatches
             "T17_MCD_TRO_Rifleman",
             "T17_MCD_TRO_DMR",
             "T17_MCD_TRO_MG",
-            "T17_MCD_TRO_RTO"
+            "T17_MCD_TRO_RTO",
+            "T17_SH_Heavy",
+            "T17_SH_Rifleman",
+            "T17_SH_MachineGunner",
+            "T17_SH_Sniper",
+            "T17_SH_DMR"
         };
 		weapons[] = {}; // Even if you don't have anything to put in them, arma 3 requires all of these attributes to be in the cfgpatches.
     };
@@ -44,7 +49,8 @@ class CfgGroups
     class Independent
     {
         name = "$STR_A3_CfgGroups_Independent0"; // base arma stringtable assocation. used for language localization. just replace east with west and so on.
-        side = 2; 
+        side = 2;
+        #include "T17_SerpentsHandGroups.hpp"
     };
 };
 
@@ -52,10 +58,12 @@ class CfgVehicles
 {
     #include "T17ChaosInsurgencyUnits.hpp"
     #include "T17MCDIncUnits.hpp"
+    #include "T17_SerpentsHandUnits.hpp"
 };
 
 class CfgWeapons
 {
     #include "T17ChaosInsurgencyWeapons.hpp"
     #include "T17MCDIncWeapons.hpp"
+    #include "T17_SerpentsHandWeapons.hpp"
 };

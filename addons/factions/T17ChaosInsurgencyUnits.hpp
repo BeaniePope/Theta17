@@ -82,6 +82,10 @@
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'";
+        };
     };
     class T17_CI_MachineGunner: T17_CI_Rifleman 
     {
@@ -94,6 +98,7 @@
         editorCategory = "T17_ChaosInsurgency";
         side = 0;
         uniformClass = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
+        //nakedUniform = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
         backpack = "VSM_ProjectHonor_carryall";
         weapons[] = 
         {
@@ -163,6 +168,10 @@
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'";
+        };
     };
     class T17_CI_Sniper: T17_CI_Rifleman 
     {
@@ -176,6 +185,7 @@
         side = 0;
 
         uniformClass = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
+        //nakedUniform = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
         backpack = "VSM_ProjectHonor_Backpack_Compact";
 
         weapons[] = 
@@ -245,6 +255,10 @@
             "ACE_Altimeter",
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
+        };
+        class EventHandlers
+        {
+            init = "params ['_unit']; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'";
         };
     };
     class T17_CI_Marksman: T17_CI_Rifleman 
@@ -259,6 +273,7 @@
         side = 0;
 
         uniformClass = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
+        //nakedUniform = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
         backpack = "VSM_ProjectHonor_Backpack_Compact";
 
         weapons[] = 
@@ -326,6 +341,10 @@
             "ACE_Altimeter",
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
+        };
+        class EventHandlers
+        {
+            init = "params ['_unit']; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'";
         };
     };
     class T17_CI_AntiTank: T17_CI_Rifleman 
@@ -340,6 +359,7 @@
         side = 0;
 
         uniformClass = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
+        //nakedUniform = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
         backpack = "VSM_ProjectHonor_Backpack_Compact";
 
         weapons[] = 
@@ -416,6 +436,10 @@
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'";
+        };
     };
     class T17_CI_AntiAir: T17_CI_Rifleman 
     {
@@ -429,6 +453,7 @@
         side = 0;
 
         uniformClass = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
+        //nakedUniform = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
         backpack = "VSM_ProjectHonor_Backpack_Kitbag";
 
         weapons[] = 
@@ -505,6 +530,10 @@
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'";
+        };
     };
     class T17_CI_Conscript: T17_CI_Rifleman 
     {
@@ -518,6 +547,7 @@
         side = 0;
 
         uniformClass = "MLO_Black_Tan_Pants_ACU_SS_Camo";
+        //nakedUniform = "MLO_ProjectHonor_Crye_Black_Pants_Camo";
         backpack = "B_Rangemaster_belt_black";
 
         weapons[] = 
@@ -576,6 +606,10 @@
             "ItemCompass",
             "ACE_Altimeter"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; _unit forceAddUniform 'MLO_Black_Tan_Pants_ACU_SS_Camo'";
+        };
     };
     class T17_CI_ConscriptMG: T17_CI_Rifleman 
     {
@@ -589,6 +623,7 @@
         side = 0;
 
         uniformClass = "MLO_Black_Tan_Pants_ACU_SS_Camo";
+        //nakedUniform = "MLO_Black_Tan_Pants_ACU_SS_Camo";
         backpack = "B_Rangemaster_belt_black";
 
         weapons[] = 
@@ -646,5 +681,9 @@
             "ItemGPS",
             "ItemCompass",
             "ACE_Altimeter"
+        };
+        class EventHandlers
+        {
+            init = "params ['_unit']; _unit forceAddUniform 'MLO_Black_Tan_Pants_ACU_SS_Camo'";
         };
     };

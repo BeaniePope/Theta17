@@ -1,4 +1,4 @@
-class B_Soldier_base_F;
+
 
 class T17_SH_Base_Unit: B_Soldier_base_F
 {
@@ -33,6 +33,7 @@ class T17_SH_Heavy: T17_SH_Base_Unit
     scopeCurator = 2;
     displayName = "Heavy";
     uniformClass = "U_BG_Guerilla1_2_F";
+    //nakedUniform = "U_BG_Guerilla1_2_F";
     backpack = "B_Kitbag_dgtl";
 
     weapons[] =
@@ -126,6 +127,10 @@ class T17_SH_Heavy: T17_SH_Base_Unit
         "ItemCompass",
         "KAT_ChemicalDetector"
     };
+    class EventHandlers
+    {
+        init = "params ['_unit']; _unit forceAddUniform 'U_BG_Guerilla1_2_F'";
+    };
 };
 
 class T17_SH_Rifleman: T17_SH_Base_Unit
@@ -135,6 +140,7 @@ class T17_SH_Rifleman: T17_SH_Base_Unit
     scopeCurator = 2;
     displayName = "Rifleman";
     uniformClass = "U_BG_Guerilla3_1";
+    //nakedUniform = "U_BG_Guerilla3_1";
     backpack = "B_Kitbag_dgtl";
 
     weapons[] =
@@ -231,6 +237,10 @@ class T17_SH_Rifleman: T17_SH_Base_Unit
         "TFAR_anprc152",
         "ItemCompass",
         "KAT_ChemicalDetector"
+    };
+    class EventHandlers
+    {
+        init = "params ['_unit']; _unit forceAddUniform 'U_BG_Guerilla3_1'";
     };
 };
 
@@ -241,6 +251,7 @@ class T17_SH_MachineGunner: T17_SH_Base_Unit
     scopeCurator = 2;
     displayName = "Machine Gunner";
     uniformClass = "U_BG_Guerilla2_1";
+    //nakedUniform = "U_BG_Guerilla2_1";
     backpack = "B_Kitbag_dgtl";
 
     weapons[] =
@@ -333,6 +344,10 @@ class T17_SH_MachineGunner: T17_SH_Base_Unit
         "TFAR_anprc152",
         "ItemCompass",
         "KAT_ChemicalDetector"
+    };
+    class EventHandlers
+    {
+        init = "params ['_unit']; _unit forceAddUniform 'U_BG_Guerilla2_1'";
     };
 };
 
@@ -343,6 +358,7 @@ class T17_SH_Sniper: T17_SH_Base_Unit
     scopeCurator = 2;
     displayName = "Sniper";
     uniformClass = "U_BG_Guerilla3_1";
+    //nakedUniform = "U_BG_Guerilla3_1";
     backpack = "B_Kitbag_dgtl";
 
     weapons[] =
@@ -449,6 +465,10 @@ class T17_SH_Sniper: T17_SH_Base_Unit
         "TFAR_anprc152",
         "ItemCompass",
         "KAT_ChemicalDetector"
+    };
+    class EventHandlers
+    {
+        init = "params ['_unit']; _unit forceAddUniform 'U_BG_Guerilla3_1'";
     };
 };
 
@@ -459,6 +479,7 @@ class T17_SH_DMR: T17_SH_Base_Unit
     scopeCurator = 2;
     displayName = "DMR";
     uniformClass = "U_BG_Guerilla3_1";
+    //nakedUniform = "U_BG_Guerilla3_1";
     backpack = "B_Kitbag_dgtl";
 
     weapons[] =
@@ -565,6 +586,10 @@ class T17_SH_DMR: T17_SH_Base_Unit
         "TFAR_anprc152",
         "ItemCompass",
         "KAT_ChemicalDetector"
+    };
+    class EventHandlers
+    {
+        init = "params ['_unit']; _unit forceAddUniform 'U_BG_Guerilla3_1'";
     };
 };
 
