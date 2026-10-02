@@ -41,6 +41,11 @@ class CfgGroups
         #include "T17ChaosInsurgencyGroups.hpp" // We do this via includes so the list doesn't become impossible to read. 
         #include "T17MCDIncGroups.hpp"
     };
+    class Independent
+    {
+        name = "$STR_A3_CfgGroups_Independent0"; // base arma stringtable assocation. used for language localization. just replace east with west and so on.
+        side = 2; 
+    };
 };
 
 class CfgVehicles
