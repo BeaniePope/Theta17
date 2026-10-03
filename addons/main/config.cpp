@@ -20,7 +20,8 @@ class CfgPatches
         {
             "T17_CombatShirt_Item", // Same for weapons /  items.
 			"T17_MCD_Suit_Item",
-			"T17_AR_Uniform_Item"
+			"T17_AR_Uniform_Item",
+			"T17_AR_Scientist_Uniform_Item"
         };
     };
 };
@@ -52,6 +53,12 @@ class CfgEditorCategories // Top level category for the list. Think NATO, CSAT, 
         scopeCurator = 2;
         scopeEditor = 2;
     };
+	class T17_AR
+	{
+		displayName = "[T17] Anderson Robotics";
+        scopeCurator = 2;
+        scopeEditor = 2;
+	};
 	class T17_Misc
 	{
 		displayName = "[T17] Miscellaneous POI / GOI";
@@ -80,10 +87,18 @@ class CfgFactionClasses
 	};
 	class T17_SH_Faction
 	{
-		displayName = "[T17] Serpants Hand";
+		displayName = "[T17] Serpent's Hand";
 		priority = 1;
 		side = 0;
 		icon = "\z\t17\addons\main\textures\icons\shicon_ca.paa";
+		flag = "";
+	};
+	class T17_AR_Faction
+	{
+		displayName = "[T17] Anderson Robotics";
+		priority = 1;
+		side = 0;
+		icon = "\z\t17\addons\main\textures\icons\aricon_ca.paa";
 		flag = "";
 	};
 };
@@ -129,6 +144,18 @@ class CfgEditorSubcategories // Intermediate Category for the list. Think Men (P
 	class T17_Nobody
 	{
 		displayName = "Nobody";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+	class T17_Androids
+	{
+		displayName = "Androids";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+	class T17_AR_Personnel
+	{
+		displayName = "Personnel";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
@@ -186,6 +213,23 @@ class CfgWeapons
 			mass = 30;
 		};
 	};
+	class T17_AR_Scientist_Uniform_Item: Uniform_Base
+	{
+		author = "Queen";
+		scope = 2;
+		displayName = "[T17] AR Scientist Uniform";
+		picture = "\a3\Characters_F_Enoch\Uniforms\data\ui\icon_U_C_Uniform_Scientist_01_F_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		DLC = "T17";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "T17_AR_Scientist_Uniform";
+			containerClass = "Supply200";
+			mass = 30;
+		};
+	};
+
 
 	
 	
@@ -351,7 +395,23 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 			"\z\t17\addons\main\textures\AR_Uniform.rvmat"
 		};
 	};
-
+	class U_C_Uniform_Scientist_01_black;
+	class T17_AR_Scientist_Uniform: U_C_Uniform_Scientist_01_black
+	{
+		author = "Queen";
+		uniformClass = "T17_AR_Scientist_Uniform_Item";
+		model = "\a3\Characters_F\Civil\Scientist_01_F.p3d";
+		scope = 1;
+		side = 0;
+		hiddenSelections[] = 
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\z\t17\addons\main\textures\AR_Scientist_Uniform_CO.paa"
+		};
+	};
 
 	class T17_Nobody_Unit: B_Soldier_F
 	{

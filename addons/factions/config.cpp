@@ -31,7 +31,14 @@ class CfgPatches
             "T17_SH_Rifleman",
             "T17_SH_MachineGunner",
             "T17_SH_Sniper",
-            "T17_SH_DMR"
+            "T17_SH_DMR",
+            "T17_AR_Technician",
+            "T17_AR_Scientist",
+            "T17_AR_Rifleman",
+            "T17_AR_Rifleman_2",
+            "T17_AR_Marksman",
+            "T17_AR_AntiTank",
+            "T17_AR_AntiAir"
         };
 		weapons[] = {}; // Even if you don't have anything to put in them, arma 3 requires all of these attributes to be in the cfgpatches.
     };
@@ -45,6 +52,7 @@ class CfgGroups
         side = 0; 
         #include "T17ChaosInsurgencyGroups.hpp" // We do this via includes so the list doesn't become impossible to read. 
         #include "T17MCDIncGroups.hpp"
+        #include "T17_AndersonRoboticsGroups.hpp"
     };
     class Independent
     {
@@ -59,6 +67,7 @@ class CfgVehicles
     #include "T17ChaosInsurgencyUnits.hpp"
     #include "T17MCDIncUnits.hpp"
     #include "T17_SerpentsHandUnits.hpp"
+    #include "T17_AndersonRoboticsUnits.hpp"
 };
 
 class CfgWeapons
@@ -66,4 +75,5 @@ class CfgWeapons
     #include "T17ChaosInsurgencyWeapons.hpp"
     #include "T17MCDIncWeapons.hpp"
     #include "T17_SerpentsHandWeapons.hpp"
+    #include "T17_AndersonRoboticsWeapons.hpp"
 };
