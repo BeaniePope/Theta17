@@ -395,8 +395,8 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 			"\z\t17\addons\main\textures\AR_Uniform.rvmat"
 		};
 	};
-	class U_C_Uniform_Scientist_01_black;
-	class T17_AR_Scientist_Uniform: U_C_Uniform_Scientist_01_black
+	class C_Uniform_Scientist_01_base_F;
+	class T17_AR_Scientist_Uniform: C_Uniform_Scientist_01_base_F
 	{
 		author = "Queen";
 		uniformClass = "T17_AR_Scientist_Uniform_Item";
@@ -405,11 +405,11 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 		side = 0;
 		hiddenSelections[] = 
 		{
-			"camo"
+			"id"
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\z\t17\addons\main\textures\AR_Scientist_Uniform_CO.paa"
+			"\z\t17\addons\main\textures\T17_AR_Scientist_ID.paa"
 		};
 	};
 

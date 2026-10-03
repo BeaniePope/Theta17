@@ -46,7 +46,7 @@ class T17_AR_Scientist: T17_AR_Base_Unit
     scope = 2;
     scopeCurator = 2;
     displayName = "Scientist";
-    uniformClass = "U_C_Uniform_Scientist_01_black";
+    uniformClass = "T17_AR_Scientist_Uniform_Item";
     backpack = "";
     weapons[] = {"Throw","Put"};
     respawnWeapons[] = {"Throw","Put"};
@@ -58,7 +58,7 @@ class T17_AR_Scientist: T17_AR_Base_Unit
     respawnLinkedItems[] = {"H_Cap_blu_headset","ItemMap","DSA_Detector","","ItemCompass","KAT_ChemicalDetector"};
     class EventHandlers
     {
-        init = "params ['_unit']; _unit forceAddUniform 'U_C_Uniform_Scientist_01_black'";
+        init = "params ['_unit']; _unit forceAddUniform 'T17_AR_Scientist_Uniform_Item'";
     };
 };
 

@@ -276,24 +276,24 @@ class T17_MCD_TRO_Rifleman: T17_MCD_Base_Unit
 
     magazines[] =
     {
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
         "hlc_10Rnd_357SIG_B_P229",
         "hlc_10Rnd_357SIG_B_P229"
     };
 
     respawnMagazines[] =
     {
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
         "hlc_10Rnd_357SIG_B_P229",
         "hlc_10Rnd_357SIG_B_P229"
     };
@@ -615,24 +615,24 @@ class T17_MCD_TRO_RTO: T17_MCD_Base_Unit
 
     magazines[] =
     {
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
         "hlc_10Rnd_357SIG_B_P229",
         "hlc_10Rnd_357SIG_B_P229"
     };
 
     respawnMagazines[] =
     {
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
-        "rhs_mag_20Rnd_SCAR_762x51_m80_ball_bk",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
+        "CUP_20Rnd_762x51_B_SCAR_bkl",
         "hlc_10Rnd_357SIG_B_P229",
         "hlc_10Rnd_357SIG_B_P229"
     };
