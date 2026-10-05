@@ -38,7 +38,23 @@ class CfgPatches
             "T17_AR_Rifleman_2",
             "T17_AR_Marksman",
             "T17_AR_AntiTank",
-            "T17_AR_AntiAir"
+            "T17_AR_AntiAir",
+            "T17_GOC_Rifleman",
+            "T17_GOC_Rifleman_Alt",
+            "T17_GOC_Rifleman_HK",
+            "T17_GOC_MG",
+            "T17_GOC_Marksman",
+            "T17_GOC_AT",
+            "T17_GOC_AA",
+            "T17_GOC_RTO",
+            "T17_GOC_CBRN",
+            "T17_GOC_CBRN_Light",
+            "T17_GOC_Crew",
+            "T17_GOC_AirCrew",
+            "T17_GOC_Pilot",
+            "T17_GOC_GroundTechnician",
+            "T17_GOC_FieldOfficer",
+            "T17_GOC_Officer"
         };
 		weapons[] = {}; // Even if you don't have anything to put in them, arma 3 requires all of these attributes to be in the cfgpatches.
     };
@@ -60,6 +76,12 @@ class CfgGroups
         side = 2;
         #include "T17_SerpentsHandGroups.hpp"
     };
+    class West
+    {
+        name = "$STR_A3_CfgGroups_West0"; // base arma stringtable assocation. used for language localization. just replace east with west and so on.
+        side = 1;
+        #include "T17GOCGroups.hpp"
+    };
 };
 
 class CfgVehicles
@@ -68,6 +90,7 @@ class CfgVehicles
     #include "T17MCDIncUnits.hpp"
     #include "T17_SerpentsHandUnits.hpp"
     #include "T17_AndersonRoboticsUnits.hpp"
+    #include "T17GOCUnits.hpp"
 };
 
 class CfgWeapons
@@ -76,4 +99,5 @@ class CfgWeapons
     #include "T17MCDIncWeapons.hpp"
     #include "T17_SerpentsHandWeapons.hpp"
     #include "T17_AndersonRoboticsWeapons.hpp"
+    #include "T17GOCWeapons.hpp"
 };

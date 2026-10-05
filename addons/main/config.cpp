@@ -21,7 +21,8 @@ class CfgPatches
             "T17_CombatShirt_Item", // Same for weapons /  items.
 			"T17_MCD_Suit_Item",
 			"T17_AR_Uniform_Item",
-			"T17_AR_Scientist_Uniform_Item"
+			"T17_AR_Scientist_Uniform_Item",
+			"T17_GOC_Vest"
         };
     };
 };
@@ -58,6 +59,12 @@ class CfgEditorCategories // Top level category for the list. Think NATO, CSAT, 
 		displayName = "[T17] Anderson Robotics";
         scopeCurator = 2;
         scopeEditor = 2;
+	};
+	class T17_GOC
+	{
+		displayName = "[T17] Global Occult Coalition";
+		scopeCurator = 2;
+		scopeEditor = 2;
 	};
 	class T17_Misc
 	{
@@ -96,6 +103,14 @@ class CfgFactionClasses
 	class T17_AR_Faction
 	{
 		displayName = "[T17] Anderson Robotics";
+		priority = 1;
+		side = 0;
+		icon = "\z\t17\addons\main\textures\icons\aricon_ca.paa";
+		flag = "";
+	};
+	class T17_GOC_Faction
+	{
+		displayName = "[T17] Global Occult Coalition";
 		priority = 1;
 		side = 0;
 		icon = "\z\t17\addons\main\textures\icons\aricon_ca.paa";
@@ -159,6 +174,12 @@ class CfgEditorSubcategories // Intermediate Category for the list. Think Men (P
         scopeCurator = 2;
         scopeeditor = 2;
 	};
+	class T17_GOC_Personnel
+	{
+		displayName = "Troops";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
 };
 
 class CfgWeapons
@@ -166,6 +187,8 @@ class CfgWeapons
     class U_B_CombatUniform_mcam_vest;
     class UniformItem;
 	class Uniform_Base;
+	class VestItem;
+	class ItemCore;
 
     class T17_CombatShirt_Item: U_B_CombatUniform_mcam_vest
     {
@@ -231,7 +254,81 @@ class CfgWeapons
 	};
 
 
-	
+	//class CUP_V_RUS_6B45_1;
+	//class CUP_Vest_RUS_Camo_Ratnik_Base;
+	class T17_GOC_Vest: ItemCore
+	{
+		dlc = "T17";
+		displayName = "Global Occult Coalition Vest";
+		author = "Queen";
+		scope = 2;
+		picture="\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Russia\data\ui\icon_v_6b45_1_emr_ca.paa";
+		model="\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Russia\ratnik\vest\CUP_6B45_1.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\z\t17\addons\main\textures\T17_UNGOC_Vest_co.paa",
+			"\z\t17\addons\main\textures\T17_UNGOC_VestEquipment_co.paa"
+		};
+		hiddenSelectionsMaterials[]= 
+		{
+			"z\t17\addons\main\textures\T17_UNGOC_Vest.rvmat",
+			"z\t17\addons\main\textures\T17_UNGOC_VestEquipment.rvmat"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Russia\ratnik\vest\CUP_6B45_1.p3d";
+			mass=70;
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"\z\t17\addons\main\textures\T17_UNGOC_Vest_co.paa",
+				"\z\t17\addons\main\textures\T17_UNGOC_VestEquipment_co.paa"
+			};
+			hiddenSelectionsMaterials[]= 
+			{
+				"z\t17\addons\main\textures\T17_UNGOC_Vest.rvmat",
+				"z\t17\addons\main\textures\T17_UNGOC_VestEquipment.rvmat"
+			};
+			armor=20;
+			passThrough=0.5;
+			containerClass="Supply140";
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.30000001;
+				};
+			};
+		};
+	};
 	
 
 };
