@@ -329,8 +329,6 @@ class CfgWeapons
 			};
 		};
 	};
-	
-
 };
 
 
@@ -521,7 +519,7 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 			"Adams",
 			"G_Spectacles_Tinted"
 		};
-		model = "\a3\Characters_F_AoW\Uniforms\FormalSuit_01_F";
+		model = "\a3\Characters_F_AoW\Uniforms\FormalSuit_01_F.p3d";
 		uniformClass = "U_C_FormalSuit_01_gray_F"; 
 		side = 2;  
 		editorCategory = "T17_Misc";  
@@ -554,3 +552,18 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 	};
 };
 // [[[],[],["hgun_Pistol_01_F","","","",["10Rnd_9x21_Mag",10],[],""],["U_C_FormalSuit_01_gray_F",[]],[],[],"H_StrawHat_dark","G_Spectacles_Tinted",[],["ItemMap","DSA_Detector","TFAR_anprc152","ItemCompass","KAT_ChemicalDetector",""]],[["aceax_textureOptions",[]]]]
+
+class CfgGlasses
+{
+	class G_Balaclava_blk;
+	class T17_GlassesRound: G_Balaclava_blk
+	{
+		dlc = "T17";
+		author = "Scout";
+		displayName = "Glasses (Round)";
+        model = "\z\t17\addons\main\models\glasses.p3d";
+		identityTypes[] = {};
+		hiddenSelections[] = {"frame", "lens"};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\main\textures\frame_co.paa", "\z\t17\addons\main\textures\lens_ca.paa"};
+	};
+};
