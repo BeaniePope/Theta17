@@ -209,6 +209,7 @@ class CfgWeapons
 		displayName = "[T17] Marshall, Carter & Dark Uniform";
 		picture = "\a3\Characters_F_AoW\Uniforms\data\ui\icon_U_C_FormalSuit_01_black_F_ca.paa";
 		model = "\a3\Characters_F_AoW\Uniforms\Suitpacks\suitpack_FormalSuit_01_F.p3d";
+		modelSides[] = {0,1,2,3,4,5,6,7};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\a3\Characters_F_AoW\Uniforms\Suitpacks\data\suitpack_FormalSuit_01_black_CO.paa"};
 		DLC = "T17";
@@ -227,6 +228,7 @@ class CfgWeapons
 		displayName = "[T17] AR Android Uniform";
 		//picture = "\a3\Characters_F_AoW\Uniforms\data\ui\icon_U_C_FormalSuit_01_black_F_ca.paa";
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+		modelSides[] = {0,1,2,3,4,5,6,7};
 		DLC = "T17";
 		class ItemInfo: UniformItem
 		{
@@ -243,6 +245,7 @@ class CfgWeapons
 		displayName = "[T17] AR Scientist Uniform";
 		picture = "\a3\Characters_F_Enoch\Uniforms\data\ui\icon_U_C_Uniform_Scientist_01_F_ca.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		modelSides[] = {0,1,2,3,4,5,6,7};
 		DLC = "T17";
 		class ItemInfo: UniformItem
 		{

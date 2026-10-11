@@ -576,10 +576,6 @@
             "ItemCompass",
             "ACE_Altimeter"
         };
-        class EventHandlers
-        {
-            init = "params ['_unit']; _unit forceAddUniform 'MLO_Black_Tan_Pants_ACU_SS_Camo'";
-        };
     };
     class T17_CI_ConscriptMG: T17_CI_Rifleman 
     {
@@ -650,9 +646,5 @@
             "ItemGPS",
             "ItemCompass",
             "ACE_Altimeter"
-        };
-        class EventHandlers
-        {
-            init = "params ['_unit']; _unit forceAddUniform 'MLO_Black_Tan_Pants_ACU_SS_Camo'";
         };
     };

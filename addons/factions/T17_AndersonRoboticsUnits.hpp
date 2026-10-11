@@ -1,4 +1,4 @@
-class T17_AR_Base_Unit: B_Soldier_base_F
+class T17_AR_Base_Unit: O_Soldier_base_F
 {
     author = "Queen";
     scope = 0;
@@ -79,10 +79,6 @@ class T17_AR_Rifleman: T17_AR_Base_Unit
     respawnItems[] = {"crowsew_ctrack","ItemcTab","crowsew_tfar_icom","AnomalyDetector","ACE_M26_Clacker","ACE_DAGR","ACE_Cellphone"};
     linkedItems[] = {"SSV_Helmet_Android_Army","ItemMap","DSA_Detector","TFAR_anprc152","ItemCompass","KAT_ChemicalDetector"};
     respawnLinkedItems[] = {"SSV_Helmet_Android_Army","ItemMap","DSA_Detector","TFAR_anprc152","ItemCompass","KAT_ChemicalDetector"};
-    class EventHandlers
-    {
-        init = "params ['_unit']; _unit forceAddUniform 'T17_AR_Uniform_Item'";
-    };
 };
 
 class T17_AR_Rifleman_2: T17_AR_Rifleman
@@ -95,10 +91,6 @@ class T17_AR_Rifleman_2: T17_AR_Rifleman
     respawnWeapons[] = {"T17_AR_Katiba","T17_AR_P226","Throw","Put"};
     magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","hlc_15Rnd_9x19_B_P226"};
     respawnMagazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_B_P226"};
-    class EventHandlers
-    {
-        init = "params ['_unit']; _unit forceAddUniform 'T17_AR_Uniform_Item'";
-    };
 };
 
 class T17_AR_Marksman: T17_AR_Rifleman
@@ -111,10 +103,6 @@ class T17_AR_Marksman: T17_AR_Rifleman
     respawnWeapons[] = {"T17_AR_MXM","T17_AR_P226","Throw","Put"};
     magazines[] = {"30Rnd_65x39_caseless_black_mag_Tracer","hlc_15Rnd_9x19_B_P226"};
     respawnMagazines[] = {"30Rnd_65x39_caseless_black_mag_Tracer","hlc_15Rnd_9x19_B_P226"};
-    class EventHandlers
-    {
-        init = "params ['_unit']; _unit forceAddUniform 'T17_AR_Uniform_Item'";
-    };
 };
 
 class T17_AR_AntiTank: T17_AR_Rifleman
@@ -128,10 +116,6 @@ class T17_AR_AntiTank: T17_AR_Rifleman
     respawnWeapons[] = {"T17_AR_Rifle","T17_AR_TitanAT","T17_AR_P226","Throw","Put"};
     magazines[] = {"30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","Titan_AT","Titan_AP","hlc_15Rnd_9x19_B_P226"};
     respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","Titan_AT","Titan_AP","hlc_15Rnd_9x19_B_P226"};
-    class EventHandlers
-    {
-        init = "params ['_unit']; _unit forceAddUniform 'T17_AR_Uniform_Item'";
-    };
 };
 
 class T17_AR_AntiAir: T17_AR_Rifleman
@@ -145,8 +129,4 @@ class T17_AR_AntiAir: T17_AR_Rifleman
     respawnWeapons[] = {"T17_AR_Rifle","T17_AR_TitanAA","T17_AR_P226","Throw","Put"};
     magazines[] = {"30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","Titan_AA","hlc_15Rnd_9x19_B_P226"};
     respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","30Rnd_65x39_caseless_msbs_mag","Titan_AA","hlc_15Rnd_9x19_B_P226"};
-    class EventHandlers
-    {
-        init = "params ['_unit']; _unit forceAddUniform 'T17_AR_Uniform_Item'";
-    };
 };
