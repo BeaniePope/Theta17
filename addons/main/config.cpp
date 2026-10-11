@@ -567,3 +567,43 @@ class CfgGlasses
 		hiddenSelectionsTextures[] = {"\z\t17\addons\main\textures\frame_co.paa", "\z\t17\addons\main\textures\lens_ca.paa"};
 	};
 };
+
+class CfgMainMenuSpotlight
+{
+	delete OldMan;
+	delete Bootcamp;
+	delete EastWind;
+	delete ApexProtocol;
+	delete Orange_Showcase_IDAP;
+	delete Orange_Showcase_LoW;
+	delete Orange_CampaignGerman;
+	delete Orange_Campaign;
+	delete Tanks_Campaign_01;
+	delete Showcase_TankDestroyers;
+	delete Contact_Campaign;
+	delete Tacops_Campaign_03;
+	delete Tacops_Campaign_02;
+	delete Tacops_Campaign_01;
+	delete SP_FD14;
+	delete AoW_Showcase_AoW;
+	delete AoW_Showcase_Future;
+	delete Showcase_VR_lxWS;
+	delete Extraction_lxWS;
+	delete Showcase_Alchemist_lxWS;
+	delete Training_Day_RF;
+	delete Air_Control_RF;
+	delete EF_ResoluteCyclone;
+	delete Scenario_AirControl_RF;
+	delete Scenario_FireSeason_RF;
+	delete Scenario_TrainingDay_RF;
+	class T17_ServerJoin
+	{
+		text = "Operations";
+		textIsQuote = 0;
+		picture = "\z\t17\addons\main\textures\mainmenulogo_co.paa";
+		video = "\z\t17\addons\main\videos\mainmenuvideo.ogv";
+		action = "connectToServer ['216.245.177.54', 2306, 'MTFT17']";
+		actionText = "Join";
+		condition = "true";
+	};
+};
