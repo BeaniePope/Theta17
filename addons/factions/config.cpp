@@ -95,6 +95,7 @@ class CfgVehicles
 
 class CfgWeapons
 {
+    #include "T17Uniforms.hpp"
     #include "T17ChaosInsurgencyWeapons.hpp"
     #include "T17MCDIncWeapons.hpp"
     #include "T17_SerpentsHandWeapons.hpp"
