@@ -553,6 +553,54 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 			"H_StrawHat_dark"
 		};
 	};
+	class Mavic_drone_base_F
+	{
+		class ViewPilot;
+		class ViewOptics;
+		class PilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide;
+			};
+		};
+	};
+	class Mavic_3_BLU: Mavic_drone_base_F
+	{
+		class ViewPilot: ViewPilot
+		{
+			maxFov = 0.85;
+			visionMode[] = {"Normal","NVG"};
+			thermalMode[] = {0,1};
+			opticsPPEffects[] = {};
+		};
+		class ViewOptics: ViewOptics
+		{
+			visionMode[] = {"Normal","NVG"};
+			thermalMode[] = {0,1};
+			opticsPPEffects[] = {};
+			maxFov = 0.85;
+		};
+		class PilotCamera: PilotCamera
+		{
+			class OpticsIn: OpticsIn
+			{
+				class Wide: Wide
+				{
+					visionMode[] = {"Normal","NVG"};
+					thermalMode[] = {0,1};
+					opticsPPEffects[] = {};
+					minFov = 0.015;
+					maxFov = 0.9;
+				};
+			};
+			minTurn = -180;
+			maxTurn = 180;
+			minElev = -35;
+			maxElev = 180;
+			initElev = 0;
+		};
+	};
 };
 // [[[],[],["hgun_Pistol_01_F","","","",["10Rnd_9x21_Mag",10],[],""],["U_C_FormalSuit_01_gray_F",[]],[],[],"H_StrawHat_dark","G_Spectacles_Tinted",[],["ItemMap","DSA_Detector","TFAR_anprc152","ItemCompass","KAT_ChemicalDetector",""]],[["aceax_textureOptions",[]]]]
 
