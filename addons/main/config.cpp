@@ -22,7 +22,8 @@ class CfgPatches
 			"T17_MCD_Suit_Item",
 			"T17_AR_Uniform_Item",
 			"T17_AR_Scientist_Uniform_Item",
-			"T17_GOC_Vest"
+			"T17_GOC_Vest",
+			"T17_ScrambleGoggles_NVG"
         };
     };
 };
@@ -332,6 +333,38 @@ class CfgWeapons
 			};
 		};
 	};
+
+	class NVGoggles;
+	class T17_ScrambleGoggles_NVG: NVGoggles
+	{
+
+		author = "Scout";
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		displayName = "SCRAMBLE Goggles";
+        model = "\z\t17\addons\main\models\scramblegoggles.p3d";
+		ace_nightvision_generation = 4;
+		ace_nightvision_bluRadius = 0.35;
+		modelOptics = "\z\t17\addons\main\models\panoramic.p3d";
+		nameSound = "nvgoggles";
+		descriptionShort = "White Phosphor";
+		ace_nightvision_const_maxBrightness = 6;
+		ace_nightvision_const_minBrightness = -6;
+		ace_nightvision_colorPreset[] = {0.0, {0.0, 0.0, 0.0, 0.0}, {1.1, 0.8, 1.9, 0.9}, {1, 1, 6, 0.0}};
+		class ItemInfo
+		{
+			type = 616;
+			hmdType = 0;
+			uniformModel = "\z\t17\addons\main\models\scramblegoggles.p3d";
+			modelOff = "\z\t17\addons\main\models\scramblegoggles.p3d";
+			mass = 10;
+		};
+		thermalMode[] = {0};
+		visionMode[] = {"Normal","NVG"};
+		scopeCurator = 2;
+		weaponPoolAvailable = 1;
+	};
 };
 
 
@@ -612,10 +645,22 @@ class CfgGlasses
 		dlc = "T17";
 		author = "Scout";
 		displayName = "Glasses (Round)";
+		scope = 2;
         model = "\z\t17\addons\main\models\glasses.p3d";
 		identityTypes[] = {};
 		hiddenSelections[] = {"frame", "lens"};
 		hiddenSelectionsTextures[] = {"\z\t17\addons\main\textures\frame_co.paa", "\z\t17\addons\main\textures\lens_ca.paa"};
+	};
+	class T17_ScrambleGoggles: G_Balaclava_blk
+	{
+		dlc = "T17";
+		author = "Scout";
+		displayName = "SCRAMBLE Goggles";
+		scope = 2;
+        model = "\z\t17\addons\main\models\scramblegoggles.p3d";
+		identityTypes[] = {};
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
 	};
 };
 
