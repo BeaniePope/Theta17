@@ -3,7 +3,7 @@ class CfgPatches
 {
     class T17_Main
     {
-        author = "Queen";
+        author = "Scout & Queen";
 		name = "T17_Main";
 		url = "";
 		requiredAddons[] = 
