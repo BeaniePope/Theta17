@@ -23,7 +23,9 @@ class CfgPatches
 			"T17_AR_Uniform_Item",
 			"T17_AR_Scientist_Uniform_Item",
 			"T17_GOC_Vest",
-			"T17_ScrambleGoggles_NVG"
+			"T17_ScrambleGoggles_NVG",
+			"T17_BallisticMask_NVG",
+			"T17_BallisticMaskScrambleGoggles_NVG"
         };
     };
 };
@@ -358,12 +360,46 @@ class CfgWeapons
 			hmdType = 0;
 			uniformModel = "\z\t17\addons\main\models\scramblegoggles.p3d";
 			modelOff = "\z\t17\addons\main\models\scramblegoggles.p3d";
-			mass = 10;
+			mass = 1;
 		};
 		thermalMode[] = {0};
 		visionMode[] = {"Normal","NVG"};
 		scopeCurator = 2;
 		weaponPoolAvailable = 1;
+	};
+	class T17_BallisticMask_NVG: T17_ScrambleGoggles_NVG
+	{
+		author = "Scout";
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		displayName = "Ballistic Mask";
+    	model = "\z\t17\addons\main\models\ballisticmask.p3d";
+		class ItemInfo
+		{
+			type = 616;
+			hmdType = 0;
+			uniformModel = "\z\t17\addons\main\models\ballisticmask.p3d";
+			modelOff = "\z\t17\addons\main\models\ballisticmask.p3d";
+			mass = 1;
+		};
+	};
+	class T17_BallisticMaskScrambleGoggles_NVG: T17_ScrambleGoggles_NVG
+	{
+		author = "Scout";
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		displayName = "Ballistic Mask & SCRAMBLE Goggles";
+    	model = "\z\t17\addons\main\models\ballisticmaskscramblegoggles.p3d";
+		class ItemInfo
+		{
+			type = 616;
+			hmdType = 0;
+			uniformModel = "\z\t17\addons\main\models\ballisticmaskscramblegoggles.p3d";
+			modelOff = "\z\t17\addons\main\models\ballisticmaskscramblegoggles.p3d";
+			mass = 1;
+		};
 	};
 };
 
@@ -586,6 +622,7 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 			"H_StrawHat_dark"
 		};
 	};
+
 	class Mavic_drone_base_F
 	{
 		class ViewPilot;
@@ -659,8 +696,30 @@ class CfgGlasses
 		scope = 2;
         model = "\z\t17\addons\main\models\scramblegoggles.p3d";
 		identityTypes[] = {};
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
+		hiddenSelections[] = {"goggles"};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\main\textures\scramblegoggles_co.paa"};
+	};
+	class T17_BallisticMask: G_Balaclava_blk
+	{
+		dlc = "T17";
+		author = "Scout";
+		displayName = "Ballistic Mask";
+		scope = 2;
+        model = "\z\t17\addons\main\models\ballisticmask.p3d";
+		identityTypes[] = {};
+		hiddenSelections[] = {"mask"};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\main\textures\ballisticmask_co.paa"};
+	};
+	class T17_BallisticMaskScrambleGoggles: G_Balaclava_blk
+	{
+		dlc = "T17";
+		author = "Scout";
+		displayName = "Ballistic Mask & SCRAMBLE Goggles";
+		scope = 2;
+        model = "\z\t17\addons\main\models\ballisticmaskscramblegoggles.p3d";
+		identityTypes[] = {};
+		hiddenSelections[] = {"mask","goggles"};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\main\textures\ballisticmask_co.paa","\z\t17\addons\main\textures\scramblegoggles_co.paa"};
 	};
 };
 
