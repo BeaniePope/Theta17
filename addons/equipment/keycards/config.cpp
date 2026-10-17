@@ -97,7 +97,7 @@ class CfgVehicles
 		editorSubcategory = "EdSubcat_InventoryItems";
         icon = "iconObject_1x1";
 		vehicleClass = "Items";
-		model = "\A3\Weapons_F\DummyItemHorizontal.p3d";
+		model = "\A3\Weapons_F\DummyItem.p3d";
 		class TransportItems
 		{
 			class SCP_CB_Things_Keycard_C1
