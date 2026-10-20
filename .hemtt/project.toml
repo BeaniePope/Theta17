@@ -6,5 +6,7 @@ mainprefix = "z"
 major = 1
 minor = 0
 patch = 0
-build = 0
 git_hash = 0
+[hemtt.publish]
+changelog = "CHANGELOG.md"
+description = "README.md"

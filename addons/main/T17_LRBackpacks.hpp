@@ -10,7 +10,7 @@
 		tf_dialog = "anarc210_radio_dialog";
 		tf_subtype = "digital_lr";
 		tf_dialogUpdate = "[""CH%1""] call TFAR_fnc_updateLRDialogToChannel;";
-		tf_range = 5000;
+		tf_range = 15000;
 	};
 	class T17_LR_Satcom:  MTF_FCPC_Satcom_veil
 	{
@@ -20,7 +20,7 @@
 		tf_dialog = "anarc210_radio_dialog";
 		tf_subtype = "digital_lr";
 		tf_dialogUpdate = "[""CH%1""] call TFAR_fnc_updateLRDialogToChannel;";
-		tf_range = 5000;
+		tf_range = 15000;
 	};
 	class T17_LR_Backpack: BTRG_ZIPON_LR_BLK
 	{
@@ -30,5 +30,5 @@
 		tf_dialog = "anarc210_radio_dialog";
 		tf_subtype = "digital_lr";
 		tf_dialogUpdate = "[""CH%1""] call TFAR_fnc_updateLRDialogToChannel;";
-		tf_range = 2000;
+		tf_range = 15000;
 	};
