@@ -71,6 +71,7 @@ class CfgVehicles // Backpacks, Vehicles, Objects, and Units are all the same th
 	#include "T17_AndersonRoboticsVehicles.hpp"
 	#include "T17_NobodyVehicles.hpp"
 	#include "T17_DroneImprovements.hpp"
+	#include "T17_ArsenalBoxes.hpp"
 };
 // [[[],[],["hgun_Pistol_01_F","","","",["10Rnd_9x21_Mag",10],[],""],["U_C_FormalSuit_01_gray_F",[]],[],[],"H_StrawHat_dark","G_Spectacles_Tinted",[],["ItemMap","DSA_Detector","TFAR_anprc152","ItemCompass","KAT_ChemicalDetector",""]],[["aceax_textureOptions",[]]]]
 

@@ -42,4 +42,10 @@ class CfgEditorCategories // Top level category for the list. Think NATO, CSAT, 
 		scopeCurator = 2;
         scopeEditor = 2;
 	};
+    class T17_Props
+	{
+		displayName = "[T17] Props";
+		scopeCurator = 2;
+        scopeEditor = 2;
+	};
 };

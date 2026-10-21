@@ -10,3 +10,7 @@ git_hash = 0
 [hemtt.publish]
 changelog = "CHANGELOG.md"
 description = "README.md"
+[lints.sqf.var_all_caps]
+options.ignore = [
+    "T17_*", "HOV_*",
+]
