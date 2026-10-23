@@ -41,3 +41,12 @@ class T17_Overseer_Arsenal: T17_Scholar_Arsenal
         PostInit = "params ['_entity']; [_entity, 'Overseer'] call T17_fnc_initArsenal";
     };
 };
+
+class T17_Raven_Arsenal: T17_Cleaners_Arsenal
+{
+    displayName = "[Theta - 17] Raven Arsenal";
+    class EventHandlers
+    {
+        PostInit = "params ['_entity']; [_entity, 'Raven'] call T17_fnc_initArsenal";
+    };
+};

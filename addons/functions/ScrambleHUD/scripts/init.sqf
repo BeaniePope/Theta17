@@ -1,8 +1,7 @@
 waitUntil { !isNull (findDisplay 46) };
 
 
-//AI intergration (post-3den)
-//pre-placed 3den units
+
 
 
 //setting player variables

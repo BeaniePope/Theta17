@@ -73,7 +73,7 @@ HOV_fnc_initSuit = {
 	[_unit] call HOV_suit_ready;
 	_hasSCRAMBLEHeadgear = (goggles player in T17_SCRAMBLEGOGGLES || hmd player in T17_SCRAMBLENVG);
 
-	if ((_hasSCRAMBLEHeadgear) && (alive _unit) && !(_unit getVariable ['HOV_hudInitiated', false]) && (_unit getVariable ['HOV_suitActive', false])) then {
+	if ((_hasSCRAMBLEHeadgear) && (alive _unit) && !(_unit getVariable ['HOV_hudInitiated', false])) then {
 		["[HOV_fnc_initSuit] Booting HUD for: %1", name _unit] call HOV_fnc_DebugMessage;
 		[_unit] call HOV_suit_activation;
 		call HOV_fnc_hudBootUp;
@@ -91,7 +91,7 @@ HOV_suit_activation = {
 
 	HOV_hasHelmet = (goggles player in T17_SCRAMBLEGOGGLES || hmd player in T17_SCRAMBLENVG);
 	HOV_firstPersonCheck = ((cameraView == "INTERNAL") || (cameraView == "GUNNER"));
-	
+	_unit setVariable ["HOV_suitActive",true, true];
 	_unit setVariable ["HOV_hasUniform", true, true];
 	
 	_unit setVariable ["HOV_HUD_ACTIVE", false, true];
@@ -206,6 +206,7 @@ HOV_fnc_getHelmetOverlay = {
 			HOV_hudOverlayBrokenTexture = "";
 
 			HOV_TEXTURE_INTERIOR_OVERLAY = "\z\T17\addons\functions\SCRAMBLEHUD\textures\T17_interiorOverlay.paa";
+			HOV_HUD_START_IMAGE = "\z\T17\addons\functions\SCRAMBLEHUD\textures\T17_startUp_normal.paa";			
 		};
 		default {
 			HOV_hudOverlayTexture = "";
@@ -259,8 +260,6 @@ HOV_fnc_clearHud = {
 		{_x ctrlSetTextColor [0,0,0,0]; _x ctrlCommit 0;} forEach _hudElements;
 	};
 
-	(HOV_pa_lines#0) ctrlSetTextColor [0,0,0,0];
-	(HOV_pa_lines#0) ctrlCommit 0;
 
 	player setVariable ["HOV_HUD_ACTIVE", false, true];
 	player setVariable ["HOV_HUD_ALLOWED", false];
@@ -322,7 +321,7 @@ HOV_fnc_hudBootUp = {
 		(HOV_interiorOverlay#0),
 		(HOV_visorEffect#0)
 	];
-	{_x ctrlSetTextColor [0,0,0,0]} forEach _hudElements;
+	{_x ctrlSetTextColor [0,0,0,1]} forEach _hudElements;
 
 	_chapterID = "Theta - 17";
 	
@@ -336,63 +335,61 @@ HOV_fnc_hudBootUp = {
 	private _input = "";
 	private _bootupText = [];
 
-	if (HOV_BOOTUP_OVERWRITE_TEXT && !isNil "HOV_bootText") then {
-		_bootupText = HOV_bootText;
-	} else {
-		_bootupText = [
-			["// Initializing SCRAMBLE Systems //",0.0,"",0.5, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["--Loading Foundation Data--",0.1,"",0.0, _input, _input],
-			["-Secure. Contain. Protect.-",0.1,"",0.0, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["Initializing visual processing...",0.1,"",0.0, _input, _input],
-			["Reading data...",0.1,"   Complete",0.0, _input, _input],
-			["Updating from SCPNET...",0.1,"   Updated",0.0, _input, _input],
-			["System vers. v40.7",0.1,"",0.0, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["Listing Core Functions",0.1,"",0.0, _input, _input],
-			["Device        Device ID        Device Class",0.1,"",0.0, _input, _input],
-			["----------------------------------------------------",0.1,"",0.0, _input, _input],
-			["23            2F798-Theta-7       Visual CognitoHazard Scrub",0.1,"",0.0, _input, _input],
-			["56            4D927-Alpha-9       Localized Amnestic System",0.1,"",0.0, _input, _input],
-			["78            9G487-Beta-4        SCPNET Integrated Communications",0.1,"",0.0, _input, _input],
-			["----------------------------------------------------",0.1,"",0.0, _input, _input],
-			["--All Functions Loaded--",0.1,"",0.1, _input, _input],
-			["&gt;&gt; Initializing SCRAMBLE Boot Sequence &lt;&lt;",0.1,"",0.3, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["Operator ID:",0.1," [%1]",0.2, _input, name player],
-			["Mobile Task Force Designation:",0.1," [%1]",0.2, _input, _chapterID],
-			["SCRAMBLE Mark:",0.1," [%1]",0.2, _input, HOV_ARMOR_MK],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["Powering Up Head Up Display",0.1,"",0.2, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["      Live Visual Feed",0.1,"   [ONLINE]",0.0, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["          Calibrating Global Positioning System...",0.1,"   Completed",0.0, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["      Visual Impairment Assistance",0.1,"   [ONLINE]",0.0, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["Testing Amnestic Protocols....",0.1,"",0.2, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["          Activating SCIPNET Link...",0.1,"   Online",0.0, _input, _input],
-			["          Syncing to Internal Communications Network...",0.1,"   Complete",0.0, _input, _input],
-			["          Initializing Cognitohazard Scanners... ",0.3,"   Online",0.2, _input, _input],
-			["          Calibrating Visual Acuity Detection...",0.1,"   Complete",0.0, _input, _input],
-			["          Final Amnestics Checks...",0.1,"   Success",0.0, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["      General Combat Assist",0.1,"   [ONLINE]",0.0, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["--Boot Sequence Complete--",0.2,"",0.2, _input, _input],
-			["        All systems: NOMINAL",0.2,"",0.2, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["&gt;&gt; SCRAMBLE System Ready for Use. &lt;&lt;",0.1,"",0.4, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["// Thank you, Operator //",0.1,"",0.0, _input, _input],
-			["&#160;",0.1,"",0.0, _input, _input],
-			["To keeping the Veil secure.",2.1,"",0.0, _input, _input]
-		];
-	};
+	
+	_bootupText = [
+		["// Initializing SCRAMBLE Systems //",0.0,"",0.5, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["--Loading Foundation Data--",0.1,"",0.0, _input, _input],
+		["-Secure. Contain. Protect.-",0.1,"",0.0, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["Initializing visual processing...",0.1,"",0.0, _input, _input],
+		["Reading data...",0.1,"   Complete",0.0, _input, _input],
+		["Updating from SCPNET...",0.1,"   Updated",0.0, _input, _input],
+		["System vers. v40.7",0.1,"",0.0, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["Listing Core Functions",0.1,"",0.0, _input, _input],
+		["Device        Device ID        Device Class",0.1,"",0.0, _input, _input],
+		["----------------------------------------------------",0.1,"",0.0, _input, _input],
+		["23            2F798-Theta-7       Visual CognitoHazard Scrub",0.1,"",0.0, _input, _input],
+		["56            4D927-Alpha-9       Localized Amnestic System",0.1,"",0.0, _input, _input],
+		["78            9G487-Beta-4        SCPNET Integrated Communications",0.1,"",0.0, _input, _input],
+		["----------------------------------------------------",0.1,"",0.0, _input, _input],
+		["--All Functions Loaded--",0.1,"",0.1, _input, _input],
+		["&gt;&gt; Initializing SCRAMBLE Boot Sequence &lt;&lt;",0.1,"",0.3, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["Operator ID:",0.1," [%1]",0.2, _input, name player],
+		["Mobile Task Force Designation:",0.1," [%1]",0.2, _input, _chapterID],
+		["SCRAMBLE Mark:",0.1," [%1]",0.2, _input, HOV_ARMOR_MK],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["Powering Up Head Up Display",0.1,"",0.2, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["      Live Visual Feed",0.1,"   [ONLINE]",0.0, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["          Calibrating Global Positioning System...",0.1,"   Completed",0.0, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["      Visual Impairment Assistance",0.1,"   [ONLINE]",0.0, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["Testing Amnestic Protocols....",0.1,"",0.2, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["          Activating SCIPNET Link...",0.1,"   Online",0.0, _input, _input],
+		["          Syncing to Internal Communications Network...",0.1,"   Complete",0.0, _input, _input],
+		["          Initializing Cognitohazard Scanners... ",0.3,"   Online",0.2, _input, _input],
+		["          Calibrating Visual Acuity Detection...",0.1,"   Complete",0.0, _input, _input],
+		["          Final Amnestics Checks...",0.1,"   Success",0.0, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["      General Combat Assist",0.1,"   [ONLINE]",0.0, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["--Boot Sequence Complete--",0.2,"",0.2, _input, _input],
+		["        All systems: NOMINAL",0.2,"",0.2, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["&gt;&gt; SCRAMBLE System Ready for Use. &lt;&lt;",0.1,"",0.4, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["// Thank you, Operator //",0.1,"",0.0, _input, _input],
+		["&#160;",0.1,"",0.0, _input, _input],
+		["To keeping the Veil secure.",2.1,"",0.0, _input, _input]
+	];
+
 
 	private _textField = (HOV_bootUpTextField#0);
 	private _startUpImage = (HOV_startUpImage#0);
@@ -679,7 +676,7 @@ HOV_fnc_addTargetingEventhandler = {
   };
  
   ["HOV_TARGETING_HUD", "onEachFrame",{
-    if (HOV_showIcons && isNull(findDisplay 312) && (!isNil "HOV_ALLOW_AUSPEX" && {HOV_ALLOW_AUSPEX})) then {
+    if (isNull(findDisplay 312)) then {
       {
         private _unit = _x;
         private _distance = positionCameraToWorld [0,0,0] distance _unit;
@@ -927,3 +924,4 @@ HOV_fnc_SystemMessageLoop = {
 		sleep 1;
 	};
 };
+

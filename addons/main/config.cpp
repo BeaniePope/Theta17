@@ -14,7 +14,11 @@ class CfgPatches
 		units[] = 
         {
             "T17_Unit", // Every unit you make has to be defined here, or else zeus can't access it.
-			"T17_Nobody_Unit"
+			"T17_Nobody_Unit",
+			"T17_Scholar_Arsenal",
+			"T17_Cleaners_Arsenal",
+			"T17_Overseer_Arsenal",
+			"T17_Raven_Arsenal"
         };
 		weapons[] = 
         {
