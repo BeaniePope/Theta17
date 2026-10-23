@@ -11,3 +11,9 @@
 ### Removed
 
 - Larping
+
+## [1.0.1]
+
+### Added
+
+- Arsenals
