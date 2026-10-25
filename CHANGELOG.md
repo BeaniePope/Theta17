@@ -17,3 +17,9 @@
 ### Added
 
 - Arsenals
+
+## [1.0.2]
+
+### Added
+
+- Nyx's Custom
