@@ -61,7 +61,17 @@ class CfgPatches
             "T17_HelmetHBK_B",
             "T17_HelmetHBK_Ear_B",
             "T17_HelmetHBK_Chops_B",
-            "T17_HelmetHBK_Headset_B"
+            "T17_HelmetHBK_Headset_B",
+
+			"T17_HelmetHBK_SL_B",
+			"T17_HelmetHBK_Ear_SL_B",
+			"T17_HelmetHBK_Chops_SL_B",
+			"T17_HelmetHBK_Headset_SL_B",
+
+			"T17_HelmetHBK_Medic_B",
+			"T17_HelmetHBK_Ear_Medic_B",
+			"T17_HelmetHBK_Chops_Medic_B",
+			"T17_HelmetHBK_Headset_Medic_B"
 		};
         skipWhenMissingDependencies = 1;
     };
@@ -112,7 +122,7 @@ class CfgWeapons
             uniformModel = "-";
             uniformClass = "T17_CombatUniform_B_Vehicle";
             containerClass = "Supply40";
-            mass = 40;
+            mass = 10;
         };
     };
 
@@ -294,6 +304,7 @@ class CfgWeapons
 	};
 
 // Vests - Overseer
+
 	class T17_Overseer_CarrierRigKBT_01_Combat_B: T17_CarrierRigKBT_01_Combat_B
 	{
 		author = "Scout";
@@ -360,6 +371,7 @@ class CfgWeapons
 	};
 
 // Vests - Scholar
+
 	class T17_Scholar_CarrierRigKBT_01_Combat_B: T17_CarrierRigKBT_01_Combat_B
 	{
 		author = "Scout";
@@ -458,5 +470,75 @@ class CfgWeapons
 		scope = 2;
 		displayName = "Foundation Helmet (Black, Headset)";
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","",""};
+	};
+
+// Helmets - Squad Lead
+
+	class T17_HelmetHBK_SL_B: T17_HelmetHBK_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Helmet (SL)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL.rvmat"};
+	};
+	class T17_HelmetHBK_Ear_SL_B: T17_HelmetHBK_Ear_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Helmet (SL, Ear Protectors)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL.rvmat"};
+	};
+	class T17_HelmetHBK_Chops_SL_B: T17_HelmetHBK_Chops_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Helmet (SL, Chops)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL.rvmat"};
+	};
+	class T17_HelmetHBK_Headset_SL_B: T17_HelmetHBK_Headset_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Helmet (SL, Headset)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL.rvmat"};
+	};
+
+// Helmets - Medic
+
+	class T17_HelmetHBK_Medic_B: T17_HelmetHBK_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Helmet (Medic)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat"};
+	};
+	class T17_HelmetHBK_Ear_Medic_B: T17_HelmetHBK_Ear_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Helmet (Medic, Ear Protectors)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat"};
+	};
+	class T17_HelmetHBK_Chops_Medic_B: T17_HelmetHBK_Chops_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Helmet (Medic, Chops)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat"};
+	};
+	class T17_HelmetHBK_Headset_Medic_B: T17_HelmetHBK_Headset_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Helmet (Medic, Headset)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat"};
 	};
 };
