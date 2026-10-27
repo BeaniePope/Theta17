@@ -71,7 +71,9 @@ class CfgPatches
 			"T17_HelmetHBK_Medic_B",
 			"T17_HelmetHBK_Ear_Medic_B",
 			"T17_HelmetHBK_Chops_Medic_B",
-			"T17_HelmetHBK_Headset_Medic_B"
+			"T17_HelmetHBK_Headset_Medic_B",
+
+			"T17_HelmetHBK_Headset_Puppy_B"
 		};
         skipWhenMissingDependencies = 1;
     };
@@ -540,5 +542,16 @@ class CfgWeapons
 		displayName = "Foundation Helmet (Medic, Headset)";
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic_co.paa"};
 		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Medic.rvmat"};
+	};
+
+// Helmets - Puppy
+
+	class T17_HelmetHBK_Headset_Puppy_B: T17_HelmetHBK_Headset_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Helmet (Puppy, Headset)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Hbk_01_B_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Puppy_co.paa","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Puppy_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_HBK\H_HelmetHBK_01.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Puppy.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Puppy.rvmat"};
 	};
 };
