@@ -66,4 +66,10 @@ class CfgEditorSubcategories // Intermediate Category for the list. Think Men (P
         scopeCurator = 2;
         scopeeditor = 2;
 	};
+	class T17_Objects
+	{
+		displayName = "Objects";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
 };
