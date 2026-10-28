@@ -264,6 +264,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_cleaners = 1;
+		t17_universal = 0;
 	};
 	class T17_Cleaners_CarrierRigKBT_01_Command_B: T17_CarrierRigKBT_01_Command_B
 	{
@@ -273,6 +274,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_cleaners = 1;
+		t17_universal = 0;
 	};
 	class T17_Cleaners_CarrierRigKBT_01_Compact_B: T17_CarrierRigKBT_01_Compact_B
 	{
@@ -282,6 +284,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_cleaners = 1;
+		t17_universal = 0;
 	};
 	class T17_Cleaners_CarrierRigKBT_01_CQB_B: T17_CarrierRigKBT_01_CQB_B
 	{
@@ -291,6 +294,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_cleaners = 1;
+		t17_universal = 0;
 	};
 	class T17_Cleaners_CarrierRigKBT_01_Crew_B: T17_CarrierRigKBT_01_Crew_B
 	{
@@ -300,6 +304,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_cleaners = 1;
+		t17_universal = 0;
 	};
 	class T17_Cleaners_CarrierRigKBT_01_Recon_B: T17_CarrierRigKBT_01_Recon_B
 	{
@@ -309,6 +314,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_cleaners = 1;
+		t17_universal = 0;
 	};
 	class T17_Cleaners_CarrierRigKBT_01_Tactical_B: T17_CarrierRigKBT_01_Tactical_B
 	{
@@ -318,6 +324,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_cleaners = 1;
+		t17_universal = 0;
 	};
 	class T17_Cleaners_CarrierRigKBT_01_Security_B: T17_CarrierRigKBT_01_Security_B
 	{
@@ -327,6 +334,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_cleaners = 1;
+		t17_universal = 0;
 	};
 
 // Vests - Cleaners (Customs)
@@ -339,6 +347,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_Lieb_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_Lieb.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_cleaners = 1;
+		t17_universal = 0;
 	};
 
 // Vests - Overseer
@@ -351,6 +360,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_overseer = 1;
+		t17_universal = 0;
 	};
 	class T17_Overseer_CarrierRigKBT_01_Command_B: T17_CarrierRigKBT_01_Command_B
 	{
@@ -360,6 +370,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_overseer = 1;
+		t17_universal = 0;
 	};
 	class T17_Overseer_CarrierRigKBT_01_Compact_B: T17_CarrierRigKBT_01_Compact_B
 	{
@@ -369,6 +380,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_overseer = 1;
+		t17_universal = 0;
 	};
 	class T17_Overseer_CarrierRigKBT_01_CQB_B: T17_CarrierRigKBT_01_CQB_B
 	{
@@ -378,6 +390,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_overseer = 1;
+		t17_universal = 0;
 	};
 	class T17_Overseer_CarrierRigKBT_01_Crew_B: T17_CarrierRigKBT_01_Crew_B
 	{
@@ -387,6 +400,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_overseer = 1;
+		t17_universal = 0;
 	};
 	class T17_Overseer_CarrierRigKBT_01_Recon_B: T17_CarrierRigKBT_01_Recon_B
 	{
@@ -396,6 +410,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_overseer = 1;
+		t17_universal = 0;
 	};
 	class T17_Overseer_CarrierRigKBT_01_Tactical_B: T17_CarrierRigKBT_01_Tactical_B
 	{
@@ -405,6 +420,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_overseer = 1;
+		t17_universal = 0;
 	};
 	class T17_Overseer_CarrierRigKBT_01_Security_B: T17_CarrierRigKBT_01_Security_B
 	{
@@ -414,6 +430,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Overseer.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_overseer = 1;
+		t17_universal = 0;
 	};
 
 // Vests - Scholar
@@ -426,6 +443,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_scholar = 1;
+		t17_universal = 0;
 	};
 	class T17_Scholar_CarrierRigKBT_01_Command_B: T17_CarrierRigKBT_01_Command_B
 	{
@@ -435,6 +453,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_scholar = 1;
+		t17_universal = 0;
 	};
 	class T17_Scholar_CarrierRigKBT_01_Compact_B: T17_CarrierRigKBT_01_Compact_B
 	{
@@ -444,6 +463,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_scholar = 1;
+		t17_universal = 0;
 	};
 	class T17_Scholar_CarrierRigKBT_01_CQB_B: T17_CarrierRigKBT_01_CQB_B
 	{
@@ -453,6 +473,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_scholar = 1;
+		t17_universal = 0;
 	};
 	class T17_Scholar_CarrierRigKBT_01_Crew_B: T17_CarrierRigKBT_01_Crew_B
 	{
@@ -462,6 +483,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_scholar = 1;
+		t17_universal = 0;
 	};
 	class T17_Scholar_CarrierRigKBT_01_Recon_B: T17_CarrierRigKBT_01_Recon_B
 	{
@@ -471,6 +493,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_scholar = 1;
+		t17_universal = 0;
 	};
 	class T17_Scholar_CarrierRigKBT_01_Tactical_B: T17_CarrierRigKBT_01_Tactical_B
 	{
@@ -480,6 +503,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_scholar = 1;
+		t17_universal = 0;
 	};
 	class T17_Scholar_CarrierRigKBT_01_Security_B: T17_CarrierRigKBT_01_Security_B
 	{
@@ -489,6 +513,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Scholar.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 		t17_scholar = 1;
+		t17_universal = 0;
 	};
 
 // Helmets
