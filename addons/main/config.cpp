@@ -18,7 +18,8 @@ class CfgPatches
 			"T17_Scholar_Arsenal",
 			"T17_Cleaners_Arsenal",
 			"T17_Overseer_Arsenal",
-			"T17_Raven_Arsenal"
+			"T17_Raven_Arsenal",
+			"T17_Invis_Backpack"
         };
 		weapons[] = 
         {
