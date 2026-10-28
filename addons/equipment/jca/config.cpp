@@ -40,6 +40,8 @@ class CfgPatches
             "T17_Cleaners_CarrierRigKBT_01_Tactical_B",
             "T17_Cleaners_CarrierRigKBT_01_Security_B",
 
+			"T17_Cleaners_Lieb_CarrierRigKBT_01_Command_B",
+
             "T17_Overseer_CarrierRigKBT_01_Combat_B",
             "T17_Overseer_CarrierRigKBT_01_Command_B",
             "T17_Overseer_CarrierRigKBT_01_Compact_B",
@@ -303,6 +305,17 @@ class CfgWeapons
 		displayName = "Foundation Security Rig (Cleaners)";
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
         hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+	};
+
+// Vests - Cleaners (Customs)
+
+	class T17_Cleaners_Lieb_CarrierRigKBT_01_Command_B: T17_Cleaners_CarrierRigKBT_01_Command_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Command Rig (Lieb)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_Lieb_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Cleaners.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_Lieb.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
 	};
 
 // Vests - Overseer
