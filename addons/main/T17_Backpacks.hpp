@@ -16,4 +16,5 @@ class T17_Invis_Backpack: ReammoBox
     model = "";
     maximumLoad = 600;
     tf_radio = 0;
+    t17_universal = 1;
 };
