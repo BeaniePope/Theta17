@@ -21,6 +21,18 @@ class CfgPatches
     };
 };
 
+class Extended_PreInit_EventHandlers {
+    class T17_pre_init_event {
+        init = "call compile preprocessFileLineNumbers '\z\t17\addons\functions\XEH_preInit.sqf'";
+    };
+};
+
+class Extended_PostInit_EventHandlers {
+    class T17_post_init_event {
+        init = "call compile preprocessFileLineNumbers '\z\t17\addons\functions\XEH_postInit.sqf'";
+    };
+};
+
 class CfgFunctions
 {
     class t17
@@ -30,6 +42,7 @@ class CfgFunctions
             file = "\z\t17\addons\functions\utility";
             class toggleVisualCognitohazard{};
             class initArsenal{};
+            class init{};
         };
     };
 };

@@ -1,0 +1,1 @@
+call t17_fnc_init;
