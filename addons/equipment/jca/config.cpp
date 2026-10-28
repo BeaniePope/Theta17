@@ -76,7 +76,13 @@ class CfgPatches
 			"T17_HelmetHBK_Headset_Medic_B",
 
 			"T17_HelmetHBK_Headset_Puppy_B",
-			"T17_HelmetHBK_Headset_Queen"
+			"T17_HelmetHBK_Headset_Queen",
+
+			"T17_Beret_01_B",
+			"T17_Beret_01_Headset_B",
+
+			"T17_Boonie_01_B",
+			"T17_Boonie_01_Headset_B"
 		};
         skipWhenMissingDependencies = 1;
     };
@@ -649,5 +655,102 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"z\t17\addons\equipment\jca\textures\HelmetHBK_Queen.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_Queen.rvmat","z\t17\addons\equipment\jca\textures\HelmetHBK_Patch_SL.rvmat"};
 		t17_scholar = 1;
 		t17_universal = 0;
+	};
+// Berets
+
+	class JCA_H_Beret_01_black_F;
+	class T17_Beret_01_B: JCA_H_Beret_01_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Beret (Black)";
+		picture = "\headwear_f_JCA_IE\Data\H_Beret_01\UI\icon_H_Beret_01_black_F_CA.paa";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Beret_01_B_co.paa"};
+		hiddenSelectionsMaterials[] = {"z\t17\addons\equipment\jca\textures\Beret_01.rvmat"};
+		t17_universal = 1;
+	};
+	class JCA_H_Beret_01_headset_black_F;
+	class T17_Beret_01_Headset_B: JCA_H_Beret_01_headset_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Beret (Black, Headset)";
+		picture = "\headwear_f_JCA_IE\Data\H_Beret_01\UI\icon_H_Beret_01_headset_black_F_CA.paa";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Beret_01_B_co.paa","headwear_f_JCA_IE\data\H_Headset_Combat_01\H_Headset_Combat_01_black_co.paa"};
+		hiddenSelectionsMaterials[] = {"z\t17\addons\equipment\jca\textures\Beret_01.rvmat", "headwear_f_JCA_IE\data\H_Headset_Combat_01\H_Headset_Combat_01.rvmat"};
+		t17_universal = 1;
+	};
+
+// Boonie Hats
+
+	class JCA_H_Boonie_01_black_F;
+	class T17_Boonie_01_B: JCA_H_Boonie_01_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Boonie (Black)";
+		picture = "\headwear_f_JCA_IE\Data\H_Boonie_01\UI\icon_H_Boonie_01_black_F_CA.paa";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Boonie_01_B_co.paa",""};
+		t17_universal = 1;
+	};
+	class JCA_H_Boonie_01_headset_black_F;
+	class T17_Boonie_01_Headset_B: JCA_H_Boonie_01_headset_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Boonie (Black, Headset)";
+		picture = "\headwear_f_JCA_IE\Data\H_Boonie_01\UI\icon_H_Boonie_01_headset_black_F_CA.paa";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Boonie_01_B_co.paa","headwear_f_JCA_IE\data\H_Headset_Combat_01\H_Headset_Combat_01_black_co.paa",""};
+		t17_universal = 1;
+	};
+};
+
+class CfgGlasses
+{
+
+// APR MSA
+
+	class JCA_G_AirPurifyingRespirator_04_black_clear_F;
+	class T17_AirPurifyingRespirator_04_B_Clear: JCA_G_AirPurifyingRespirator_04_black_clear_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation MSA (Black, Clear)";
+		picture = "\facewear_f_JCA_IE\data\G_APR_04\UI\icon_G_AirPurifyingRespirator_04_black_clear_F_ca.paa";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_04_B_CO.paa","facewear_f_JCA_IE\data\G_APR_04\G_AirPurifyingRespirator_04_glass_clear_CA.paa"};
+		t17_universal = 1;
+	};
+	class JCA_G_AirPurifyingRespirator_04_black_tinted_F;
+	class T17_AirPurifyingRespirator_04_B_Tinted: JCA_G_AirPurifyingRespirator_04_black_tinted_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation MSA (Black, Tinted)";
+		picture = "\facewear_f_JCA_IE\data\G_APR_04\UI\icon_G_AirPurifyingRespirator_04_black_tinted_F_ca.paa";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_04_B_CO.paa","facewear_f_JCA_IE\data\G_APR_04\G_AirPurifyingRespirator_04_glass_tinted_CA.paa"};
+		t17_universal = 1;
+	};
+
+// APR M50
+
+	class JCA_G_AirPurifyingRespirator_03_black_clear_F;
+	class T17_AirPurifyingRespirator_03_B_Clear: JCA_G_AirPurifyingRespirator_03_black_clear_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation M50 (Black, Clear)";
+		picture = "\facewear_f_JCA_IE\data\G_APR_03\UI\icon_G_AirPurifyingRespirator_03_black_clear_F_ca.paa";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_03_B_CO.paa","facewear_f_JCA_IE\data\G_APR_03\G_AirPurifyingRespirator_03_glass_clear_CA.paa"};
+		t17_universal = 1;
+	};
+	class JCA_G_AirPurifyingRespirator_03_black_tinted_F;
+	class T17_AirPurifyingRespirator_03_B_Tinted: JCA_G_AirPurifyingRespirator_03_black_tinted_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation M50 (Black, Tinted)";
+		picture = "\facewear_f_JCA_IE\data\G_APR_03\UI\icon_G_AirPurifyingRespirator_03_black_tinted_F_ca.paa";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_03_B_CO.paa","facewear_f_JCA_IE\data\G_APR_03\G_AirPurifyingRespirator_03_glass_tinted_CA.paa"};
+		t17_universal = 1;
 	}; 
 };
