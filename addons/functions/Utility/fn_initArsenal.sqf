@@ -45,6 +45,22 @@ private _ravenArsenal = ["Laserbatteries", "ACE_NVG_Wide_Black", "ACE_NVG_Wide_B
     _ravenArsenal pushBackUnique _x;
 } forEach T17_RavenEquipmentArr;
 
+{
+    _scholarArsenal pushBackUnique _x;
+} forEach T17_UniversalEquipmentArr;
+
+{
+    _cleanersArsenal pushBackUnique _x;
+} forEach T17_UniversalEquipmentArr;
+
+{
+    _overseerArsenal pushBackUnique _x;
+} forEach T17_UniversalEquipmentArr;
+
+{
+    _ravenArsenal pushBackUnique _x;
+} forEach T17_UniversalEquipmentArr;
+
 
 private _errorText = format ["Arsenal Type was not found in object: %1 | defaulted to Cleaners Arsenal", vehicleVarName _object]; 
 
