@@ -11,6 +11,7 @@
 		tf_subtype = "digital_lr";
 		tf_dialogUpdate = "[""CH%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_range = 15000;
+		maximumLoad = 400;
 	};
 	class T17_LR_Satcom:  MTF_FCPC_Satcom_veil
 	{
@@ -21,6 +22,7 @@
 		tf_subtype = "digital_lr";
 		tf_dialogUpdate = "[""CH%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_range = 15000;
+		maximumLoad = 400;
 	};
 	class T17_LR_Backpack: BTRG_ZIPON_LR_BLK
 	{
@@ -31,4 +33,11 @@
 		tf_subtype = "digital_lr";
 		tf_dialogUpdate = "[""CH%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_range = 15000;
+		maximumLoad = 400;
+	};
+	class T17_LR_Invis: T17_LR_Veil
+	{
+		displayName = "[Theta - 17] Invisible Backpack Radio";
+		model = "";
+		maximumLoad = 400;
 	};
