@@ -15,7 +15,7 @@ T17_RavenEquipmentArr = [];
     {
         T17_OverseerEquipmentArr pushBackUnique (configName _x);
     };
-    if (getNumber(_x >> "t17_overseer") isEqualTo 1) then 
+    if (getNumber(_x >> "t17_raven") isEqualTo 1) then 
     {
         T17_RavenEquipmentArr pushBackUnique (configName _x);
     };
@@ -32,7 +32,7 @@ T17_RavenEquipmentArr = [];
     {
         T17_OverseerEquipmentArr pushBackUnique (configName _x);
     };
-    if (getNumber(_x >> "t17_overseer") isEqualTo 1) then 
+    if (getNumber(_x >> "t17_raven") isEqualTo 1) then 
     {
         T17_RavenEquipmentArr pushBackUnique (configName _x);
     };
