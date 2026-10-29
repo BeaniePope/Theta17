@@ -14,3 +14,6 @@ description = "README.md"
 options.ignore = [
     "T17_*", "HOV_*",
 ]
+[lints.sqf]
+string_concat_in_loop = false
+extra_not = false
