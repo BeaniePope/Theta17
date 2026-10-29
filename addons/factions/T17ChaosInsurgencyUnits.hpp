@@ -83,6 +83,10 @@
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; private _arr = uniformItems _unit; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'; {_unit addItemToUniform _x} forEach _arr";
+        };
     };
     class T17_CI_MachineGunner: T17_CI_Rifleman 
     {
@@ -163,6 +167,10 @@
             "ACE_Altimeter",
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
+        };
+        class EventHandlers
+        {
+            init = "params ['_unit']; private _arr = uniformItems _unit; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'; {_unit addItemToUniform _x} forEach _arr";
         };
     };
     class T17_CI_Sniper: T17_CI_Rifleman 
@@ -246,6 +254,10 @@
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; private _arr = uniformItems _unit; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'; {_unit addItemToUniform _x} forEach _arr";
+        };
     };
     class T17_CI_Marksman: T17_CI_Rifleman 
     {
@@ -326,6 +338,10 @@
             "ACE_Altimeter",
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
+        };
+        class EventHandlers
+        {
+            init = "params ['_unit']; private _arr = uniformItems _unit; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'; {_unit addItemToUniform _x} forEach _arr";
         };
     };
     class T17_CI_AntiTank: T17_CI_Rifleman 
@@ -416,6 +432,10 @@
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; private _arr = uniformItems _unit; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'; {_unit addItemToUniform _x} forEach _arr";
+        };
     };
     class T17_CI_AntiAir: T17_CI_Rifleman 
     {
@@ -505,6 +525,10 @@
             "MTF_GPNVG18F_01",
             "TFAR_anprc148jem"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; private _arr = uniformItems _unit; _unit forceAddUniform 'MLO_ProjectHonor_Crye_Black_Pants_Camo'; {_unit addItemToUniform _x} forEach _arr";
+        };
     };
     class T17_CI_Conscript: T17_CI_Rifleman 
     {
@@ -576,6 +600,10 @@
             "ItemCompass",
             "ACE_Altimeter"
         };
+        class EventHandlers
+        {
+            init = "params ['_unit']; private _arr = uniformItems _unit; _unit forceAddUniform 'MLO_Black_Tan_Pants_ACU_SS_Camo'; {_unit addItemToUniform _x} forEach _arr";
+        };
     };
     class T17_CI_ConscriptMG: T17_CI_Rifleman 
     {
@@ -646,5 +674,9 @@
             "ItemGPS",
             "ItemCompass",
             "ACE_Altimeter"
+        };
+        class EventHandlers
+        {
+            init = "params ['_unit']; private _arr = uniformItems _unit; _unit forceAddUniform 'MLO_Black_Tan_Pants_ACU_SS_Camo'; {_unit addItemToUniform _x} forEach _arr";
         };
     };
