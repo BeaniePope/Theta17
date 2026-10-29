@@ -730,6 +730,15 @@ class CfgGlasses
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_04_B_CO.paa","facewear_f_JCA_IE\data\G_APR_04\G_AirPurifyingRespirator_04_glass_tinted_CA.paa"};
 		t17_universal = 1;
 	};
+	class T17_AirPurifyingRespirator_04_B_Iridescent: T17_AirPurifyingRespirator_04_B_Tinted
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation MSA (Black, Iridescent)";
+		picture = "\facewear_f_JCA_IE\data\G_APR_04\UI\icon_G_AirPurifyingRespirator_04_black_tinted_F_ca.paa";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_04_B_CO.paa","#(rgb,8,8,3)color(0.17254902,0.047058824,0.46666667,0.75,ca)"};
+		hiddenSelectionsMaterials[] = {"facewear_f_JCA_IE\data\G_APR_04\G_AirPurifyingRespirator_04.rvmat", "z\t17\addons\equipment\jca\textures\iridescent_glass.rvmat"};
+	};
 
 // APR M50
 
