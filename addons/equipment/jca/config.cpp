@@ -60,6 +60,8 @@ class CfgPatches
             "T17_Scholar_CarrierRigKBT_01_Tactical_B",
             "T17_Scholar_CarrierRigKBT_01_Security_B",
 
+			"T17_Platoon_Kiwi_CarrierRigKBT_01_Recon_B",
+
             "T17_HelmetHBK_B",
             "T17_HelmetHBK_Ear_B",
             "T17_HelmetHBK_Chops_B",
