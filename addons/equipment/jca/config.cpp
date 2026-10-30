@@ -522,6 +522,18 @@ class CfgWeapons
 		t17_universal = 0;
 	};
 
+// Vests - Platoon
+
+	class T17_Platoon_Kiwi_CarrierRigKBT_01_Recon_B: T17_CarrierRigKBT_01_Recon_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Recon Rig (Kiwi)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_Kiwi_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_Kiwi.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_universal = 0;
+	};
+
 // Helmets
 
     class JCA_H_HelmetHBK_black_F;
