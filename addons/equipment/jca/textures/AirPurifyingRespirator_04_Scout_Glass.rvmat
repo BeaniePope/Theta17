@@ -1,9 +1,9 @@
 ambient[] = { 1, 1, 1, 1 };
-diffuse[] = { 1, 1, 1, 1 };
+diffuse[] = { 0, 0, 0, 0 };
 forcedDiffuse[] = { 0, 0, 0, 1 };
 emmisive[] = { 0, 0, 0, 1 };
-specular[] = { 0.2, 0.2, 0.2, 1 };
-specularPower = 1024;
+specular[] = { 1, 1, 1, 1 };
+specularPower = 512;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
@@ -68,7 +68,7 @@ class Stage5
 };
 class Stage6 
 {
-	texture = "#(ai,64,64,1)fresnel(0.3,3.0)";
+	texture = "#(ai,64,64,1)fresnel(0.2,3.0)";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
@@ -79,7 +79,7 @@ class Stage6
 };
 class Stage7 
 {
-	texture = "z\t17\addons\main\textures\environment\env_iridescent_co.paa";
+	texture = "z\t17\addons\main\textures\environment\env_scout_co.paa";
 	useWorldEnvMap = "false";
 	uvSource = "tex";
 	class uvTransform {

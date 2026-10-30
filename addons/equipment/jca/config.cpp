@@ -60,6 +60,8 @@ class CfgPatches
             "T17_Scholar_CarrierRigKBT_01_Tactical_B",
             "T17_Scholar_CarrierRigKBT_01_Security_B",
 
+			"T17_Platoon_Kiwi_CarrierRigKBT_01_Recon_B",
+
             "T17_HelmetHBK_B",
             "T17_HelmetHBK_Ear_B",
             "T17_HelmetHBK_Chops_B",
@@ -522,6 +524,18 @@ class CfgWeapons
 		t17_universal = 0;
 	};
 
+// Vests - Platoon
+
+	class T17_Platoon_Kiwi_CarrierRigKBT_01_Recon_B: T17_CarrierRigKBT_01_Recon_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Recon Rig (Kiwi)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_Kiwi_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_Kiwi.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_universal = 0;
+	};
+
 // Helmets
 
     class JCA_H_HelmetHBK_black_F;
@@ -730,14 +744,14 @@ class CfgGlasses
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_04_B_CO.paa","facewear_f_JCA_IE\data\G_APR_04\G_AirPurifyingRespirator_04_glass_tinted_CA.paa"};
 		t17_universal = 1;
 	};
-	class T17_AirPurifyingRespirator_04_B_Iridescent: T17_AirPurifyingRespirator_04_B_Tinted
+	class T17_AirPurifyingRespirator_04_B_Scout: T17_AirPurifyingRespirator_04_B_Tinted
 	{
 		author = "Scout";
 		scope = 2;
-		displayName = "Foundation MSA (Black, Iridescent)";
+		displayName = "Foundation MSA (Black, Scout)";
 		picture = "\facewear_f_JCA_IE\data\G_APR_04\UI\icon_G_AirPurifyingRespirator_04_black_tinted_F_ca.paa";
-		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_04_B_CO.paa","#(rgb,8,8,3)color(0.17254902,0.047058824,0.46666667,0.75,ca)"};
-		hiddenSelectionsMaterials[] = {"facewear_f_JCA_IE\data\G_APR_04\G_AirPurifyingRespirator_04.rvmat", "z\t17\addons\equipment\jca\textures\iridescent_glass.rvmat"};
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_04_B_CO.paa","#(rgb,8,8,3)color(0.05,0.05,0.05,1.0,ca)"};
+		hiddenSelectionsMaterials[] = {"facewear_f_JCA_IE\data\G_APR_04\G_AirPurifyingRespirator_04.rvmat", "z\t17\addons\equipment\jca\textures\AirPurifyingRespirator_04_Scout_Glass.rvmat"};
 	};
 
 // APR M50
