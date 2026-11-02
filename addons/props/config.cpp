@@ -13,7 +13,8 @@ class CfgPatches
 		requiredVersion = 2.22;
 		units[] = 
         {
-            "T17_Obelisk"
+            "T17_Obelisk",
+            "T17_Crate"
         };
 		weapons[] = 
         {
@@ -42,6 +43,35 @@ class CfgVehicles
         editorCategory="T17_Props";
         editorSubcategory="T17_Objects";
         maximumLoad=0;
+		mapSize = 2;
+        class EventHandlers {};
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 1.52;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+    };
+    class T17_Crate: T17_Obelisk
+    {
+        displayName = "Crate";
+        author = "Scout";
+		model = "\z\t17\addons\props\models\Crate.p3d";
+		scope = 2;
+		scopeCurator = 2;
+		destrType = "DestructNo";
+        ace_dragging_canDrag = 0;
+        ace_dragging_canCarry = 0;
+        ace_cargo_size = 0;
+        ace_cargo_canLoad = 0;
+        ace_cargo_noRename = 1;
+        ace_cargo_blockUnloadCarry = 1;
+        editorCategory="T17_Props";
+        editorSubcategory="T17_Objects";
+        maximumLoad=100000;
 		mapSize = 2;
         class EventHandlers {};
 		class SimpleObject
