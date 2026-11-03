@@ -38,7 +38,7 @@
 	class T17_LR_Invis: T17_LR_Veil
 	{
 		displayName = "[Theta - 17] Invisible Backpack Radio";
-		model = "";
+		model = "a3\weapons_f\empty.p3d";
 		maximumLoad = 500;
 		t17_universal = 1;
 	};

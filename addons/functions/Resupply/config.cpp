@@ -16,6 +16,9 @@ class CfgPatches
 		requiredVersion = 2.22;
 	};
 };
+
+/*
+
 class CfgFunctions
 {
 	class T17_Modules
@@ -73,3 +76,5 @@ class CfgFunctions
 		};
 	};
 };
+
+*/
