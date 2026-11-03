@@ -35,7 +35,7 @@ class Extended_PostInit_EventHandlers {
 
 class CfgFunctions
 {
-    class t17
+    class t17_utility
     {
         class functions 
         {

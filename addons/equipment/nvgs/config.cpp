@@ -36,9 +36,9 @@ class CfgPatches
 
 class Extended_PreInit_EventHandlers
 {
-	class T17_ACE3_NVG_Brightness_Override
+	class T17_NVG_PreInit
 	{
-		init="execVM '\z\T17\addons\equipment\nvgs\scripts\brightness_override.sqf';";
+		init="call compile preProcessFileLineNumbers '\z\T17\addons\equipment\nvgs\XEH_PreInit.sqf';";
 	};
 };
 
