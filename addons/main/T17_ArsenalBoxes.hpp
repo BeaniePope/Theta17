@@ -22,7 +22,7 @@ class T17_Scholar_Arsenal: CUP_BOX_ACR_Wps_F
     maximumLoad=10000;
     class EventHandlers
     {
-        PostInit = "params ['_entity']; [_entity, 'Scholar'] call T17_fnc_initArsenal";
+        PostInit = "params ['_entity']; [_entity, 'Scholar'] call T17_Utility_fnc_initArsenal";
     };
 };
 class T17_Cleaners_Arsenal: T17_Scholar_Arsenal
@@ -30,7 +30,7 @@ class T17_Cleaners_Arsenal: T17_Scholar_Arsenal
     displayName = "[Theta - 17] Cleaners Arsenal";
     class EventHandlers
     {
-        PostInit = "params ['_entity']; [_entity, 'Cleaners'] call T17_fnc_initArsenal";
+        PostInit = "params ['_entity']; [_entity, 'Cleaners'] call T17_Utility_fnc_initArsenal";
     };
 };
 class T17_Overseer_Arsenal: T17_Scholar_Arsenal
@@ -38,7 +38,7 @@ class T17_Overseer_Arsenal: T17_Scholar_Arsenal
     displayName = "[Theta - 17] Overseer Arsenal";
     class EventHandlers
     {
-        PostInit = "params ['_entity']; [_entity, 'Overseer'] call T17_fnc_initArsenal";
+        PostInit = "params ['_entity']; [_entity, 'Overseer'] call T17_Utility_fnc_initArsenal";
     };
 };
 
@@ -47,6 +47,6 @@ class T17_Raven_Arsenal: T17_Cleaners_Arsenal
     displayName = "[Theta - 17] Raven Arsenal";
     class EventHandlers
     {
-        PostInit = "params ['_entity']; [_entity, 'Raven'] call T17_fnc_initArsenal";
+        PostInit = "params ['_entity']; [_entity, 'Raven'] call T17_Utility_fnc_initArsenal";
     };
 };

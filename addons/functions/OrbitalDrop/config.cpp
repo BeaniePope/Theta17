@@ -22,7 +22,7 @@ class CfgFunctions
 	{
 		class resupply
 		{
-			file="\z\t17\addons\functions\OrbitalDrop"
+			file="\z\t17\addons\functions\OrbitalDrop";
 			class initOrbitalDrop{};
 		};
 	};

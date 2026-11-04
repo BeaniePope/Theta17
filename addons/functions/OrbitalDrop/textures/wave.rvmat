@@ -1,4 +1,4 @@
-﻿#define _ARMA_
+#define _ARMA_
 
 ambient[] = {1,1,1,1};
 diffuse[] = {1,1,1,1};

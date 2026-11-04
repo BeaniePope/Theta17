@@ -1,4 +1,4 @@
-params["_position", "_objectStr"];
+params["_position", "_objectStr", "_arsenalType", "_object"];
 hint "imworkingbtw";
 systemChat "imWorkingBtw";
 
@@ -20,7 +20,7 @@ playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\orbitalDropImpact.wss",
 	
 	_PS setParticleClass "FlashSmokeHuge";
 	
-	_PS  setDropInterval 0.001 ; // 粒子掉落间隔时间
+	_PS  setDropInterval 0.001 ; // 粒子掉落间隔时间 (Particle emission interval)
 	
 	sleep 0.25;
 	
@@ -79,12 +79,32 @@ drop [
 
 deleteVehicle _particleSource;
 
+deleteVehicle _object;
+
 private _newPos = (_position # 3) - 0.2;
 
-private _object = _objectStr createVehicle _position;
+private _orbitalDropObject = _objectStr createVehicle _position;
 
 private _vec = vectorDir _object;
 
 private _newVec = _vec vectorAdd [random 5, random 5, random 3];
 
-_object setVectorDir _newVec;
+_orbitalDropObject setVectorDir _newVec;
+
+switch (_arsenalType) do
+{
+	case "Scholar": { 
+		_orbitalDropObject addAction [
+			"Unlock Crate", 
+			{
+				params ["_target", "_caller", "_actionId", "_arguments"]; 
+				if !([_caller, "SCP_CB_Things_Keycard_C3"] call BIS_fnc_hasItem) exitWith {playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessDenied.wss", _target];};
+				playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessAccepted.wss", _target];
+				_target setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenUnlocked_co.paa"];
+				[_target, 'Scholar'] call T17_Utility_fnc_initArsenal;
+				_position = getPosATL _target;
+				waitUntil {sleep 1; _position nearEntities ["Man", 10] == []};
+				[_target, true] call ace_arsenal_fnc_removeBox;
+			}
+		]};
+}

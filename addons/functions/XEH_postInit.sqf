@@ -1,1 +1,1 @@
-call t17_fnc_init;
+call t17_utility_fnc_init;
