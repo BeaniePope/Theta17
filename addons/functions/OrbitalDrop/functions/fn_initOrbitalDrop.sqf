@@ -206,7 +206,9 @@ deleteVehicle _particleSource;
 
 deleteVehicle _object;
 
-createVehicle ["Land_ShellCrater_01_F", _position, [], 0, "CAN_COLLIDE"];
+private _crater = createVehicle ["Land_ShellCrater_01_F", _position, [], 0, "CAN_COLLIDE"];
+
+_crater setObjectTextureGlobal [0, surfaceTexture (getPos _crater)];
 
 private _newElevation = (_position # 2) - 0.3;
 
