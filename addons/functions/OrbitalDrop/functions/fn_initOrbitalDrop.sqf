@@ -206,6 +206,8 @@ deleteVehicle _particleSource;
 
 deleteVehicle _object;
 
+createVehicle ["Land_ShellCrater_01_F", _position, [], 0, "CAN_COLLIDE"];
+
 private _newElevation = (_position # 2) - 0.3;
 
 private _newPosition = _position;
@@ -213,8 +215,6 @@ private _newPosition = _position;
 _newPosition set [2, _newElevation];
 
 private _orbitalDropObject = _objectStr createVehicle _newPosition;
-
-createVehicle ["Land_ShellCrater_01_F", _position, [], 0, "CAN_COLLIDE"];
 
 private _vec = vectorDir _object;
 
