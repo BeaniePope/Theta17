@@ -115,12 +115,12 @@ class CfgVehicles
                 displayName = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold' color='#00C200'> Request Scholar Arsenal </t>";
                 displayNameDefault = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold' color='#00C200'> Request Scholar Arsenal </t>";
                 textToolTip = "Request Scholar Arsenal";
-                position = "";
+                position = "interact";
                 radius  = 5;
                 priority = 64;
                 onlyForPlayer = 0;
-                condition = "";
-                statement = "[getPosATL this, 'T17_Crate', 'Scholar', this] call t17_OrbitalDrop_fnc_initOrbitalDrop;";
+                condition = "true";
+                statement = "[getPosATL this, 'T17_Crate', 'Scholar', this] spawn t17_Orbital_fnc_initOrbitalDrop;";
                 animPeriod = 0.25;
             };
             class cleaners_arsenal
@@ -128,12 +128,12 @@ class CfgVehicles
                 displayName = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold' color='#E30000'> Request Cleaners Arsenal </t>";
                 displayNameDefault = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold' color='#E30000'> Request Cleaners Arsenal </t>";
                 textToolTip = "Request Cleaners Arsenal";
-                position = "";
+                position = "interact";
                 radius  = 5;
                 priority = 63;
                 onlyForPlayer = 0;
-                condition = "";
-                statement = "[getPosATL this, 'T17_Crate', 'Cleaners', this] call t17_OrbitalDrop_fnc_initOrbitalDrop;";
+                condition = "true";
+                statement = "[getPosATL this, 'T17_Crate', 'Cleaners', this] spawn t17_Orbital_fnc_initOrbitalDrop;";
                 animPeriod = 1.0;
             };
 			class overseer_arsenal
@@ -141,25 +141,25 @@ class CfgVehicles
                 displayName = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold' color='#005ADE'> Request Overseer Arsenal </t>";
                 displayNameDefault = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold' color='#005ADE'> Request Overseer Arsenal </t>";
                 textToolTip = "Request Overseer Arsenal";
-				position = "";
+				position = "interact";
                 radius  = 5;
                 priority = 62;
                 onlyForPlayer = 0;
                 showWindow = 0;
-                condition = "";
-                statement = "[getPosATL this, 'T17_Crate', 'Overseer', this] call t17_OrbitalDrop_fnc_initOrbitalDrop;";
+                condition = "true";
+                statement = "[getPosATL this, 'T17_Crate', 'Overseer', this] spawn t17_Orbital_fnc_initOrbitalDrop;";
             };
             class SERE_Arsenal
             {
                 displayName = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold'  color='#69219E'> Request SERE Arsenal </t>";
                 displayNameDefault = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold'  color='#69219E'> Request SERE Arsenal </t>";
                 textToolTip = "Request SERE Arsenal";
-                position = "";
+                position = "interact";
                 radius  = 5;
                 priority = 61;
                 onlyForPlayer = 0;
-                condition = "";
-                statement = "[getPosATL this, 'T17_Crate', 'SERE', this] call t17_OrbitalDrop_fnc_initOrbitalDrop;";
+                condition = "true";
+                statement = "[getPosATL this, 'T17_Crate', 'SERE', this] spawn t17_Orbital_fnc_initOrbitalDrop;";
             };
         };
 		class SimpleObject

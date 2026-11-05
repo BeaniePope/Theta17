@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class T17_Modules
+	class T17_Orbital
 	{
 		units[]={};
 		weapons[]={};
@@ -12,7 +12,7 @@ class CfgPatches
 			"zen_custom_modules",
 			"cba_main"
 		};
-		author="Ce, Basipek and Phenosi (Stolen by Scout)";
+		author="Queen";
 		requiredVersion = 2.22;
 	};
 };
@@ -22,7 +22,7 @@ class CfgFunctions
 	{
 		class resupply
 		{
-			file="\z\t17\addons\functions\OrbitalDrop";
+			file="\z\t17\addons\functions\OrbitalDrop\functions";
 			class initOrbitalDrop{};
 		};
 	};
