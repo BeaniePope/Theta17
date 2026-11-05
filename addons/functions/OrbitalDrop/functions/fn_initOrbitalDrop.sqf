@@ -225,7 +225,7 @@ private _newVec = _vec vectorAdd [random 8, random 8, random 5];
 _orbitalDropObject setVectorDir _newVec;
 _orbitalDropObject setPosATL _newPosition;
 
-_orbitalDropObject setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
+_orbitalDropObject setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
 switch (_arsenalType) do
 {
 	case "Scholar": { 
@@ -235,12 +235,12 @@ switch (_arsenalType) do
 				params ["_target", "_caller", "_actionId", "_arguments"]; 
 				if !([_caller, "SCP_CB_Things_Keycard_C3"] call BIS_fnc_hasItem) exitWith {playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessDenied.wss", _target];};
 				playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessAccepted.wss", _target];
-				_target setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenUnlocked_co.paa"];
+				_target setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenUnlocked_co.paa"];
 				[_target, 'Scholar'] call T17_Utility_fnc_initArsenal;
 				_position = getPosATL _target;
 				waitUntil {sleep 1; ((_position nearEntities ["Man", 10]) isEqualTo [])};
 				[_target, true] call ace_arsenal_fnc_removeBox;
-				_target setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
+				_target setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
 			}
 		]
 	};
@@ -251,12 +251,12 @@ switch (_arsenalType) do
 				params ["_target", "_caller", "_actionId", "_arguments"]; 
 				if !([_caller, "SCP_CB_Things_Keycard_C3"] call BIS_fnc_hasItem) exitWith {playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessDenied.wss", _target];};
 				playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessAccepted.wss", _target];
-				_target setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenUnlocked_co.paa"];
+				_target setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenUnlocked_co.paa"];
 				[_target, 'Cleaners'] call T17_Utility_fnc_initArsenal;
 				_position = getPosATL _target;
 				waitUntil {sleep 1; ((_position nearEntities ["Man", 10]) isEqualTo [])};
 				[_target, true] call ace_arsenal_fnc_removeBox;
-				_target setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
+				_target setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
 			}
 		]
 	};
@@ -267,12 +267,12 @@ switch (_arsenalType) do
 				params ["_target", "_caller", "_actionId", "_arguments"]; 
 				if !([_caller, "SCP_CB_Things_Keycard_C3"] call BIS_fnc_hasItem) exitWith {playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessDenied.wss", _target];};
 				playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessAccepted.wss", _target];
-				_target setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenUnlocked_co.paa"];
+				_target setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenUnlocked_co.paa"];
 				[_target, 'Overseer'] call T17_Utility_fnc_initArsenal;
 				_position = getPosATL _target;
 				waitUntil {sleep 1; ((_position nearEntities ["Man", 10]) isEqualTo [])};
 				[_target, true] call ace_arsenal_fnc_removeBox;
-				_target setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
+				_target setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
 			}
 		]
 	};
@@ -283,12 +283,12 @@ switch (_arsenalType) do
 				params ["_target", "_caller", "_actionId", "_arguments"]; 
 				if !([_caller, "SCP_CB_Things_Keycard_C3"] call BIS_fnc_hasItem) exitWith {playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessDenied.wss", _target];};
 				playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\accessAccepted.wss", _target];
-				_target setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenUnlocked_co.paa"];
+				_target setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenUnlocked_co.paa"];
 				[_target, 'SERE'] call T17_Utility_fnc_initArsenal;
 				_position = getPosATL _target;
 				waitUntil {sleep 1; ((_position nearEntities ["Man", 10]) isEqualTo [])};
 				[_target, true] call ace_arsenal_fnc_removeBox;
-				_target setObjectTexture ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
+				_target setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
 			}
 		]
 	};
