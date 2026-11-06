@@ -6,12 +6,15 @@ private _reEntryPosition = getPosATL _object;
 private _reEntryZElevated = ((_reEntryPosition # 2) + 600);
 _reEntryPosition set [2, _reEntryZElevated];
 playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\orbitalDrop.wss", _object, false, _reEntryPosition, 5];
+private _movingOrbital = createVehicle ["T17_Crate_Physx", _reEntryPosition, [], 0, "CAN_COLLIDE"];
+_movingOrbital setVelocity [0, 0, -250];
 systemChat "whistle";
 
 sleep 2;
 
 systemChat "boom";
 playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\orbitalDropImpact.wss", _object, false, _position, 5];
+deleteVehicle _movingOrbital;
 
 sleep 1;
 
@@ -19,7 +22,7 @@ sleep 1;
 [_position] spawn {
 	params ["_particlePos"];
 
-	_PS = "#particlesource" createVehicleLocal _particlePos;
+	_PS =  createVehicleLocal ["#particlesource", _particlePos, [], 0, "CAN_COLLIDE"];
 	
 	_PS setParticleClass "FlashSmokeHuge";
 	
@@ -87,7 +90,7 @@ deleteVehicle _particleSource;
 
 	params ["_target_pos"];
 	
-	_source = "#particlesource" createVehicleLocal _target_pos;
+	_source = createVehicleLocal ["#particlesource", _target_pos, [], 0, "CAN_COLLIDE"];
 	_source setParticleParams [
 		["\z\t17\addons\functions\OrbitalDrop\models\TT_added_smoke_12.p3d", 7, 0, 49, 0],
 		// animationName, type, timerPeriod
@@ -135,7 +138,7 @@ deleteVehicle _particleSource;
 
 	params ["_particlePos"];
 
-	_source = "#particlesource" createVehicleLocal _particlePos;
+	_source = createVehicleLocal ["#particlesource", _particlePos, [], 0, "CAN_COLLIDE"];
 	_source setParticleParams [
 		["\z\t17\addons\functions\OrbitalDrop\models\TT_added_smoke_01.p3d", 8, 0, 64, 0],
 		// animationName, type, timerPeriod
@@ -206,6 +209,8 @@ deleteVehicle _particleSource;
 
 deleteVehicle _object;
 
+private _explosive = createVehicle ["T17_OrbitalDrop_Ammo", _position, [], 0, "CAN_COLLIDE"];
+
 private _crater = createVehicle ["Land_ShellCrater_01_F", _position, [], 0, "CAN_COLLIDE"];
 
 _crater setObjectTextureGlobal [0, surfaceTexture (getPos _crater)];
@@ -216,7 +221,7 @@ private _newPosition = _position;
 
 _newPosition set [2, _newElevation];
 
-private _orbitalDropObject = _objectStr createVehicle _newPosition;
+private _orbitalDropObject =  createVehicle [_objectStr, _newPosition, [], 0, "CAN_COLLIDE"];
 
 private _vec = vectorDir _object;
 
@@ -226,6 +231,8 @@ _orbitalDropObject setVectorDir _newVec;
 _orbitalDropObject setPosATL _newPosition;
 
 _orbitalDropObject setObjectTextureGlobal ["camoScreen", "\z\t17\addons\props\textures\ScreenLocked_co.paa"];
+
+deleteVehicle _explosive;
 switch (_arsenalType) do
 {
 	case "Scholar": { 

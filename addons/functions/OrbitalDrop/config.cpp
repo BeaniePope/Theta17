@@ -27,3 +27,13 @@ class CfgFunctions
 		};
 	};
 };
+
+class CfgAmmo
+{
+	class Sh_155mm_AMOS;
+	class T17_OrbitalDrop_Ammo: Sh_155mm_AMOS
+	{
+		indirectHitRange = 5;
+		explosive = 0;
+	};
+};
