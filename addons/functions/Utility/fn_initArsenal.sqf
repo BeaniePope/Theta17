@@ -67,15 +67,15 @@ private _errorText = format ["Arsenal Type was not found in object: %1 | default
 switch (_type) do
 
 {
-    case "Scholar": {[_object, _scholarArsenal] call ace_arsenal_fnc_initBox };
+    case "Scholar": {[_object, _scholarArsenal] remoteExec ["ace_arsenal_fnc_initBox", 0, true]; };
 
-    case "Cleaners": {[_object, _cleanersArsenal] call ace_arsenal_fnc_initBox };
+    case "Cleaners": {[_object, _cleanersArsenal] remoteExec ["ace_arsenal_fnc_initBox", 0, true]; };
 
-    case "Overseer":  {[_object, _overseerArsenal] call ace_arsenal_fnc_initBox };
+    case "Overseer":  {[_object, _overseerArsenal] remoteExec ["ace_arsenal_fnc_initBox", 0, true]; };
 
-    case "Raven": {[_object, _ravenArsenal] call ace_arsenal_fnc_initBox };
+    case "Raven": {[_object, _ravenArsenal] remoteExec ["ace_arsenal_fnc_initBox", 0, true]; };
 
-    default { [_object, _cleanersArsenal] call ace_arsenal_fnc_initBox; _errorText remoteExec ["systemChat"];};
+    default { [_object, _cleanersArsenal] remoteExec ["ace_arsenal_fnc_initBox", 0, true]; _errorText remoteExec ["systemChat"];};
 };
 
 true;
