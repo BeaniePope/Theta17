@@ -60,6 +60,15 @@ class CfgPatches
             "T17_Scholar_CarrierRigKBT_01_Tactical_B",
             "T17_Scholar_CarrierRigKBT_01_Security_B",
 
+            "T17_Raven_CarrierRigKBT_01_Combat_B",
+            "T17_Raven_CarrierRigKBT_01_Command_B",
+            "T17_Raven_CarrierRigKBT_01_Compact_B",
+            "T17_Raven_CarrierRigKBT_01_CQB_B",
+            "T17_Raven_CarrierRigKBT_01_Crew_B",
+            "T17_Raven_CarrierRigKBT_01_Recon_B",
+            "T17_Raven_CarrierRigKBT_01_Tactical_B",
+            "T17_Raven_CarrierRigKBT_01_Security_B",
+
 			"T17_Platoon_Kiwi_CarrierRigKBT_01_Recon_B",
 
             "T17_HelmetHBK_B",
