@@ -1,5 +1,5 @@
 params["_position", "_objectStr", "_arsenalType", "_object"];
-systemChat "imWorkingBtw";
+//systemChat "imWorkingBtw";
 
 sleep 10;
 private _reEntryPosition = getPosATL _object;
@@ -8,11 +8,11 @@ _reEntryPosition set [2, _reEntryZElevated];
 playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\orbitalDrop.wss", _object, false, _reEntryPosition, 5];
 private _movingOrbital = createVehicle ["T17_Crate_Physx", _reEntryPosition, [], 0, "CAN_COLLIDE"];
 _movingOrbital setVelocity [0, 0, -250];
-systemChat "whistle";
+//systemChat "whistle";
 
 sleep 2;
 
-systemChat "boom";
+//systemChat "boom";
 playSound3D ["\z\t17\addons\functions\OrbitalDrop\sounds\orbitalDropImpact.wss", _object, false, _position, 5];
 deleteVehicle _movingOrbital;
 

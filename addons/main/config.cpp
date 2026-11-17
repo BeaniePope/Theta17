@@ -122,3 +122,8 @@ class CfgMainMenuSpotlight
 		condition = "true";
 	};
 };
+
+class CfgMagazines
+{
+	
+};
