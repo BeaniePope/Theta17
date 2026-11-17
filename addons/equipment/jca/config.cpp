@@ -84,7 +84,14 @@ class CfgPatches
 			"T17_Beret_01_Headset_B",
 
 			"T17_Boonie_01_B",
-			"T17_Boonie_01_Headset_B"
+			"T17_Boonie_01_Headset_B",
+
+			"T17_Helmet_Heli_01_Pilot",
+			"T17_Helmet_Heli_01_Pilot_Raised",
+			"T17_Helmet_Heli_01_Crew",
+			"T17_Helmet_Heli_01_Crew_Raised",
+
+			"T17_Helmet_Heli_01_Crew_Nyx"
 		};
         skipWhenMissingDependencies = 1;
     };
@@ -536,6 +543,89 @@ class CfgWeapons
 		t17_universal = 0;
 	};
 
+// Vests - Raven
+
+	class T17_Raven_CarrierRigKBT_01_Combat_B: T17_CarrierRigKBT_01_Combat_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Combat Rig (Raven)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_raven = 1;
+		t17_universal = 0;
+	};
+	class T17_Raven_CarrierRigKBT_01_Command_B: T17_CarrierRigKBT_01_Command_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Command Rig (Raven)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_raven = 1;
+		t17_universal = 0;
+	};
+	class T17_Raven_CarrierRigKBT_01_Compact_B: T17_CarrierRigKBT_01_Compact_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Compact Vest (Raven)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_raven = 1;
+		t17_universal = 0;
+	};
+	class T17_Raven_CarrierRigKBT_01_CQB_B: T17_CarrierRigKBT_01_CQB_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation CQB Rig (Raven)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_raven = 1;
+		t17_universal = 0;
+	};
+	class T17_Raven_CarrierRigKBT_01_Crew_B: T17_CarrierRigKBT_01_Crew_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Crew Vest (Raven)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_raven = 1;
+		t17_universal = 0;
+	};
+	class T17_Raven_CarrierRigKBT_01_Recon_B: T17_CarrierRigKBT_01_Recon_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Recon Rig (Raven)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_raven = 1;
+		t17_universal = 0;
+	};
+	class T17_Raven_CarrierRigKBT_01_Tactical_B: T17_CarrierRigKBT_01_Tactical_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Tactical Rig (Raven)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch_ca.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Patch.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_raven = 1;
+		t17_universal = 0;
+	};
+	class T17_Raven_CarrierRigKBT_01_Security_B: T17_CarrierRigKBT_01_Security_B
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Security Rig (Raven)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\CarrierRigKBT_01_B_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate_co.paa"};
+        hiddenSelectionsMaterials[] = {"vests_f_JCA_IE\Data\V_KBT\CarrierRigKBT_01.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nametag_Raven.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat","z\t17\addons\equipment\jca\textures\CarrierRigKBT_Nameplate.rvmat"};
+		t17_raven = 1;
+		t17_universal = 0;
+	};
+
 // Helmets
 
     class JCA_H_HelmetHBK_black_F;
@@ -670,6 +760,7 @@ class CfgWeapons
 		t17_scholar = 1;
 		t17_universal = 0;
 	};
+
 // Berets
 
 	class JCA_H_Beret_01_black_F;
@@ -716,6 +807,60 @@ class CfgWeapons
 		picture = "\headwear_f_JCA_IE\Data\H_Boonie_01\UI\icon_H_Boonie_01_headset_black_F_CA.paa";
 		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Boonie_01_B_co.paa","headwear_f_JCA_IE\data\H_Headset_Combat_01\H_Headset_Combat_01_black_co.paa",""};
 		t17_universal = 1;
+	};
+
+// Pilot Helmets
+
+	class JCA_H_Helmet_Heli_01_pilot_black_F;
+	class T17_Helmet_Heli_01_Pilot: JCA_H_Helmet_Heli_01_pilot_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Heli Pilot Helmet";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass_CA.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat"};
+		t17_raven = 1;
+	};
+	class JCA_H_Helmet_Heli_01_pilot_raised_black_F;
+	class T17_Helmet_Heli_01_Pilot_Raised: JCA_H_Helmet_Heli_01_pilot_raised_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Heli Pilot Helmet (Raised)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass_CA.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat"};
+		t17_raven = 1;
+	};
+	class JCA_H_Helmet_Heli_01_crew_black_F;
+	class T17_Helmet_Heli_01_Crew: JCA_H_Helmet_Heli_01_crew_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Heli Crew Helmet";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass_CA.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat"};
+		t17_raven = 1;
+	};
+	class JCA_H_Helmet_Heli_01_crew_raised_black_F;
+	class T17_Helmet_Heli_01_Crew_Raised: JCA_H_Helmet_Heli_01_crew_raised_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Heli Crew Helmet (Raised)";
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass_CA.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa"};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat"};
+		t17_raven = 1;
+	};
+
+// Pilot Helmet - Nyx
+
+	class T17_Helmet_Heli_01_Crew_Nyx: JCA_H_Helmet_Heli_01_crew_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Foundation Heli Pilot Helmet (Nyx)";
+		hiddenSelectionsTextures[] = {"\z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_Nyx_co.paa","\z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Glass_Nyx_ca.paa","",""};
+		t17_raven = 1;
 	};
 };
 
