@@ -826,8 +826,8 @@ class CfgWeapons
 		author = "Scout";
 		scope = 2;
 		displayName = "Foundation Heli Pilot Helmet";
-		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass_CA.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa"};
-		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat"};
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Glass_ca.paa","",""};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat","",""};
 		t17_raven = 1;
 	};
 	class JCA_H_Helmet_Heli_01_pilot_raised_black_F;
@@ -836,8 +836,8 @@ class CfgWeapons
 		author = "Scout";
 		scope = 2;
 		displayName = "Foundation Heli Pilot Helmet (Raised)";
-		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass_CA.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa"};
-		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat"};
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Glass_ca.paa","",""};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat","",""};
 		t17_raven = 1;
 	};
 	class JCA_H_Helmet_Heli_01_crew_black_F;
@@ -846,8 +846,8 @@ class CfgWeapons
 		author = "Scout";
 		scope = 2;
 		displayName = "Foundation Heli Crew Helmet";
-		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass_CA.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa"};
-		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat"};
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Glass_ca.paa","",""};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat","",""};
 		t17_raven = 1;
 	};
 	class JCA_H_Helmet_Heli_01_crew_raised_black_F;
@@ -856,8 +856,8 @@ class CfgWeapons
 		author = "Scout";
 		scope = 2;
 		displayName = "Foundation Heli Crew Helmet (Raised)";
-		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass_CA.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven_co.paa"};
-		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat", "z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Patch_Raven.rvmat"};
+		hiddenSelectionsTextures[] = {"z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Glass_ca.paa","",""};
+		hiddenSelectionsMaterials[] = {"headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01.rvmat", "headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat","",""};
 		t17_raven = 1;
 	};
 
@@ -868,7 +868,7 @@ class CfgWeapons
 		author = "Scout";
 		scope = 2;
 		displayName = "Foundation Heli Pilot Helmet (Nyx)";
-		hiddenSelectionsTextures[] = {"\z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_Nyx_co.paa","\z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Glass_Nyx_ca.paa","",""};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_Nyx_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Glass_ca.paa","",""};
 		t17_raven = 1;
 	};
 };
