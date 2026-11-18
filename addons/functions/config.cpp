@@ -47,12 +47,16 @@ class CfgFunctions
     };
 };
 
-class CfgWeapons
+class CfgRemoteExec 
 {
-
-};
-
-class CfgVehicles
-{
-
+    class Functions 
+    {
+        mode = 1;
+        jip = 1;
+        class T17_Utility_fnc_initArsenal 
+        {
+            allowedTargets = 0;
+            jip = 1;
+        };
+    };
 };
