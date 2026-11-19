@@ -41,4 +41,5 @@
 		model = "a3\weapons_f\empty.p3d";
 		maximumLoad = 500;
 		t17_universal = 1;
+    	mass = 10;
 	};
