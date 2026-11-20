@@ -115,5 +115,3 @@ T17_UniversalEquipmentArr = [];
         T17_UniversalEquipmentArr pushBackUnique (configName _x);
     };
 } forEach ("true" configClasses _cfgIdentities);
-
-systemChat "Theta - 17 Initialized";
