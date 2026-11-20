@@ -211,6 +211,8 @@ deleteVehicle _object;
 
 private _explosive = createVehicle ["T17_OrbitalDrop_Ammo", _position, [], 0, "CAN_COLLIDE"];
 
+_explosive setDamage 1;
+
 private _crater = createVehicle ["Land_ShellCrater_01_F", _position, [], 0, "CAN_COLLIDE"];
 
 _crater setObjectTextureGlobal [0, surfaceTexture (getPos _crater)];

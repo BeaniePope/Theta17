@@ -33,6 +33,8 @@ class CfgPatches
 class CfgVehicles
 {
     class House_F;
+    class ACE_Actions;
+    class ACE_MainActions;
     class T17_Obelisk: House_F
     {
         displayName = "Obelisk";
@@ -92,6 +94,14 @@ class CfgVehicles
 			verticalOffsetWorld = 0;
 			init = "''";
 		};
+        class ACE_Actions: ACE_Actions
+        {
+            class ACE_MainActions: ACE_MainActions
+            {
+                selection = "interact";
+                distance = 15;
+            };
+        };
     };
     class ThingX;
     class T17_Crate_Physx: ThingX
@@ -224,8 +234,16 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\z\t17\addons\props\textures\arsenal_co.paa"};
         maximumLoad=0;
 		mapSize = 2;
+        class ACE_Actions
+        {
+            class ACE_MainActions
+            {
+                selection = "interact";
+                distance = 15;
+            };
+        };
     };
-    class T17_Arsenal_Cleaners: T17_Obelisk
+    class T17_Arsenal_Cleaners: T17_Arsenal_Base
     {
         displayName = "Arsenal Crate (Cleaners)";
         author = "Scout";
@@ -242,7 +260,7 @@ class CfgVehicles
             PostInit = "params ['_entity']; [_entity, 'Cleaners'] remoteExec ['T17_Utility_fnc_initArsenal', 0, true];";
         };
     };
-    class T17_Arsenal_Scholar: T17_Obelisk
+    class T17_Arsenal_Scholar: T17_Arsenal_Base
     {
         displayName = "Arsenal Crate (Scholar)";
         author = "Scout";
@@ -259,7 +277,7 @@ class CfgVehicles
             PostInit = "params ['_entity']; [_entity, 'Scholar'] remoteExec ['T17_Utility_fnc_initArsenal', 0, true];";
         };
     };
-    class T17_Arsenal_Overseer: T17_Obelisk
+    class T17_Arsenal_Overseer: T17_Arsenal_Base
     {
         displayName = "Arsenal Crate (Overseer)";
         author = "Scout";
@@ -276,7 +294,7 @@ class CfgVehicles
             PostInit = "params ['_entity']; [_entity, 'Overseer'] remoteExec ['T17_Utility_fnc_initArsenal', 0, true];";
         };
     };
-    class T17_Arsenal_Raven: T17_Obelisk
+    class T17_Arsenal_Raven: T17_Arsenal_Base
     {
         displayName = "Arsenal Crate (Raven)";
         author = "Scout";

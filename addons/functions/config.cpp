@@ -33,6 +33,14 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
+class Extended_Put_EventHandlers {
+    class CAManBase {
+        class T17_onPut {
+            put = "if (isServer) then {_this spawn t17_utility_fnc_initUplink;};";
+        };
+    };
+};
+
 class CfgFunctions
 {
     class t17_utility
@@ -43,6 +51,7 @@ class CfgFunctions
             class toggleVisualCognitohazard{};
             class initArsenal{};
             class init{};
+            class initUplink{};
         };
     };
 };

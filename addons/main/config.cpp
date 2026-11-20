@@ -61,6 +61,25 @@ class CfgWeapons
 			mass=40;
 		};
     };
+	class Default;
+	class Put: Default
+	{
+		muzzles[]+=
+		{
+			"T17_Uplink_Muzzle"
+		};
+		class PutMuzzle: Default
+		{
+		};
+		class T17_Uplink_Muzzle: PutMuzzle
+		{
+			magazines[]=
+			{
+				"T17_UplinkTerminalMagazine"
+			};
+		};
+	};
+
 
 	#include "T17_MarshallCarterDarkWeapons.hpp"
 	#include "T17_AndersonRoboticsWeapons.hpp"
@@ -125,5 +144,10 @@ class CfgMainMenuSpotlight
 
 class CfgMagazines
 {
-	
+	#include "T17_UtilitiesMagazines.hpp"
+};
+
+class CfgAmmo
+{
+	#include "T17_UtilitiesAmmo.hpp"
 };
