@@ -16,7 +16,12 @@ class CfgPatches
             "T17_Obelisk",
             "T17_Crate",
             "T17_Crate_Physx",
-            "T17_UplinkTerminal"
+            "T17_UplinkTerminal",
+            "T17_Arsenal_Base",
+            "T17_Arsenal_Cleaners",
+            "T17_Arsenal_Scholar",
+            "T17_Arsenal_Overseer",
+            "T17_Arsenal_Raven"
         };
 		weapons[] = 
         {
@@ -206,5 +211,86 @@ class CfgVehicles
 			verticalOffsetWorld = 0;
 			init = "''";
 		};
+    };
+    class T17_Arsenal_Base: T17_Obelisk
+    {
+        displayName = "Arsenal Crate (Base)";
+        author = "Scout";
+		model = "\z\t17\addons\props\models\arsenal.p3d";
+		scope = 2;
+		scopeCurator = 2;
+		destrType = "DestructNo";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\props\textures\arsenal_co.paa"};
+        maximumLoad=0;
+		mapSize = 2;
+    };
+    class T17_Arsenal_Cleaners: T17_Obelisk
+    {
+        displayName = "Arsenal Crate (Cleaners)";
+        author = "Scout";
+		model = "\z\t17\addons\props\models\arsenal.p3d";
+		scope = 2;
+		scopeCurator = 2;
+		destrType = "DestructNo";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\props\textures\arsenalcleaners_co.paa"};
+        maximumLoad=0;
+		mapSize = 2;
+        class EventHandlers
+        {
+            PostInit = "params ['_entity']; [_entity, 'Cleaners'] remoteExec ['T17_Utility_fnc_initArsenal', 0, true];";
+        };
+    };
+    class T17_Arsenal_Scholar: T17_Obelisk
+    {
+        displayName = "Arsenal Crate (Scholar)";
+        author = "Scout";
+		model = "\z\t17\addons\props\models\arsenal.p3d";
+		scope = 2;
+		scopeCurator = 2;
+		destrType = "DestructNo";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\props\textures\arsenalscholar_co.paa"};
+        maximumLoad=0;
+		mapSize = 2;
+        class EventHandlers
+        {
+            PostInit = "params ['_entity']; [_entity, 'Scholar'] remoteExec ['T17_Utility_fnc_initArsenal', 0, true];";
+        };
+    };
+    class T17_Arsenal_Overseer: T17_Obelisk
+    {
+        displayName = "Arsenal Crate (Overseer)";
+        author = "Scout";
+		model = "\z\t17\addons\props\models\arsenal.p3d";
+		scope = 2;
+		scopeCurator = 2;
+		destrType = "DestructNo";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\props\textures\arsenaloverseer_co.paa"};
+        maximumLoad=0;
+		mapSize = 2;
+        class EventHandlers
+        {
+            PostInit = "params ['_entity']; [_entity, 'Overseer'] remoteExec ['T17_Utility_fnc_initArsenal', 0, true];";
+        };
+    };
+    class T17_Arsenal_Raven: T17_Obelisk
+    {
+        displayName = "Arsenal Crate (Raven)";
+        author = "Scout";
+		model = "\z\t17\addons\props\models\arsenal.p3d";
+		scope = 2;
+		scopeCurator = 2;
+		destrType = "DestructNo";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\z\t17\addons\props\textures\arsenalraven_co.paa"};
+        maximumLoad=0;
+		mapSize = 2;
+        class EventHandlers
+        {
+            PostInit = "params ['_entity']; [_entity, 'Raven'] remoteExec ['T17_Utility_fnc_initArsenal', 0, true];";
+        };
     };
 };

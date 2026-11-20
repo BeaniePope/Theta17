@@ -58,5 +58,10 @@ class CfgRemoteExec
             allowedTargets = 0;
             jip = 1;
         };
+        class T17_Utility_fnc_init
+        {
+            allowedTargets = 0;
+            jip = 1;
+        };
     };
 };
