@@ -46,16 +46,6 @@ class CfgVehicles
                 condition = "this animationSourcePhase 'Door_1_source' == 0";
                 statement = "[[this], 'None'] call SCP_fnc_buttonTrigger; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound;";
             };
-            class Close_door_B: Close_door_F
-            {
-                position = "button_b";
-                statement = "[[this], 'None'] call SCP_fnc_buttonTrigger; [this, 'Press', 'button_b'] call SCP_fnc_buttonSound;";
-            };
-            class Open_door_B: Close_door_B
-            {
-                condition = "this animationSourcePhase 'Door_1_source' == 0";
-                statement = "[[this], 'None'] call SCP_fnc_buttonTrigger; [this, 'Press', 'button_b'] call SCP_fnc_buttonSound;";
-            };
         };
     };
 	class SCP_CB_Things_Door1_Button_Error;
