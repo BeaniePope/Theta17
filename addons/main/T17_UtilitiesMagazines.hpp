@@ -12,7 +12,7 @@ class T17_UplinkTerminalMagazine: CA_Magazine
 		model = "\z\t17\addons\props\models\antenna.p3d";
 		useAction = 0;
 		useActionTitle = "";
-		type = "2*256";
+		type = 2*256;
 		allowedSlots[] = {901};
 		value = 5;
 		ammo = "T17_UplinkTerminalAmmo";
