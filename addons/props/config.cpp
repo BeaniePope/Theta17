@@ -166,7 +166,7 @@ class CfgVehicles
                 displayNameDefault = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold' color='#00C200'> Request Scholar Arsenal </t>";
                 textToolTip = "Request Scholar Arsenal";
                 position = "interact";
-                radius  = 5;
+                radius  = 10;
                 priority = 64;
                 onlyForPlayer = 0;
                 condition = "true";
@@ -179,7 +179,7 @@ class CfgVehicles
                 displayNameDefault = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold' color='#E30000'> Request Cleaners Arsenal </t>";
                 textToolTip = "Request Cleaners Arsenal";
                 position = "interact";
-                radius  = 5;
+                radius  = 10;
                 priority = 63;
                 onlyForPlayer = 0;
                 condition = "true";
@@ -192,7 +192,7 @@ class CfgVehicles
                 displayNameDefault = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold' color='#005ADE'> Request Overseer Arsenal </t>";
                 textToolTip = "Request Overseer Arsenal";
 				position = "interact";
-                radius  = 5;
+                radius  = 10;
                 priority = 62;
                 onlyForPlayer = 0;
                 showWindow = 0;
@@ -205,7 +205,7 @@ class CfgVehicles
                 displayNameDefault = "<img size='1.4' image=''/><t size='1.2' font='PuristaSemibold'  color='#69219E'> Request SERE Arsenal </t>";
                 textToolTip = "Request SERE Arsenal";
                 position = "interact";
-                radius  = 5;
+                radius  = 10;
                 priority = 61;
                 onlyForPlayer = 0;
                 condition = "true";
