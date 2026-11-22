@@ -1000,7 +1000,6 @@ class CfgMagazines
 
 class CfgAmmo
 {
-	class JCA_R_MK153_HEAT_F;
 	class MissileBase;
 	class T17_Pike_Ammo: MissileBase
 	{
