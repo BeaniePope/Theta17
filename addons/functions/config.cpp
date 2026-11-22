@@ -36,7 +36,7 @@ class Extended_PostInit_EventHandlers {
 class Extended_Put_EventHandlers {
     class CAManBase {
         class T17_onPut {
-            put = "if (isServer) then {_this spawn t17_utility_fnc_initUplink;};";
+            put = "_this spawn t17_utility_fnc_initUplink;";
         };
     };
 };
