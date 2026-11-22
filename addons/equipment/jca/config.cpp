@@ -935,3 +935,6 @@ class CfgGlasses
 		t17_universal = 1;
 	}; 
 };
+
+#include "XtdGearModels.hpp"
+#include "XtdGearInfos.hpp"
