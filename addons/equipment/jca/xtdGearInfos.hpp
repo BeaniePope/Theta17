@@ -3,7 +3,7 @@ class XtdGearInfos
     class CfgWeapons 
     {
 // Universal
-        class T17_CarrierRigKBT_01_B { model = "T17_CarrierRigKBT_01"; variant = "Base"; squad = "Universal"; custom = "None"; };
+        class T17_CarrierRigKBT_01_B { model = "T17_CarrierRigKBT_01"; variant = "Standard"; squad = "Universal"; custom = "None"; };
         class T17_CarrierRigKBT_01_Light_B { model = "T17_CarrierRigKBT_01"; variant = "Light"; squad = "Universal"; custom = "None"; };
         class T17_CarrierRigKBT_01_Heavy_B { model = "T17_CarrierRigKBT_01"; variant = "Heavy"; squad = "Universal"; custom = "None"; };
         class T17_CarrierRigKBT_01_Combat_B { model = "T17_CarrierRigKBT_01"; variant = "Combat"; squad = "Universal"; custom = "None"; };
@@ -56,19 +56,19 @@ class XtdGearInfos
 // Platoon
         class T17_Platoon_Kiwi_CarrierRigKBT_01_Recon_B { model = "T17_CarrierRigKBT_01"; variant = "Recon"; squad = "Universal"; custom = "Kiwi"; };
 // Helmet
-        class T17_HelmetHBK_B { model = "T17_HelmetHBK"; variant = "Base"; role = "Base"; custom = "Base";};
-        class T17_HelmetHBK_Ear_B { model = "T17_HelmetHBK"; variant = "Ear"; role = "Base"; custom = "Base";};
-        class T17_HelmetHBK_Chops_B { model = "T17_HelmetHBK"; variant = "Chops"; role = "Base"; custom = "Base";};
-        class T17_HelmetHBK_Headset_B { model = "T17_HelmetHBK"; variant = "Headset"; role = "Base"; custom = "Base";};
-        class T17_HelmetHBK_SL_B { model = "T17_HelmetHBK"; variant = "Base"; role = "SL"; custom = "Base";};
-        class T17_HelmetHBK_Ear_SL_B { model = "T17_HelmetHBK"; variant = "Ear"; role = "SL"; custom = "Base";};
-        class T17_HelmetHBK_Chops_SL_B { model = "T17_HelmetHBK"; variant = "Chops"; role = "SL"; custom = "Base";};
-        class T17_HelmetHBK_Headset_SL_B { model = "T17_HelmetHBK"; variant = "Headset"; role = "SL"; custom = "Base";};
-        class T17_HelmetHBK_Medic_B { model = "T17_HelmetHBK"; variant = "Base"; role = "Medic"; custom = "Base";};
-        class T17_HelmetHBK_Ear_Medic_B { model = "T17_HelmetHBK"; variant = "Ear"; role = "Medic"; custom = "Base";};
-        class T17_HelmetHBK_Chops_Medic_B { model = "T17_HelmetHBK"; variant = "Chops"; role = "Medic"; custom = "Base";};
-        class T17_HelmetHBK_Headset_Medic_B { model = "T17_HelmetHBK"; variant = "Headset"; role = "Medic"; custom = "Base";};
-        class T17_HelmetHBK_Headset_Puppy_B { model = "T17_HelmetHBK"; variant = "Headset"; role = "Base"; custom = "Puppy";};
+        class T17_HelmetHBK_B { model = "T17_HelmetHBK"; variant = "Standard"; role = "Standard"; custom = "Standard";};
+        class T17_HelmetHBK_Ear_B { model = "T17_HelmetHBK"; variant = "Ear"; role = "Standard"; custom = "Standard";};
+        class T17_HelmetHBK_Chops_B { model = "T17_HelmetHBK"; variant = "Chops"; role = "Standard"; custom = "Standard";};
+        class T17_HelmetHBK_Headset_B { model = "T17_HelmetHBK"; variant = "Headset"; role = "Standard"; custom = "Standard";};
+        class T17_HelmetHBK_SL_B { model = "T17_HelmetHBK"; variant = "Standard"; role = "SL"; custom = "Standard";};
+        class T17_HelmetHBK_Ear_SL_B { model = "T17_HelmetHBK"; variant = "Ear"; role = "SL"; custom = "Standard";};
+        class T17_HelmetHBK_Chops_SL_B { model = "T17_HelmetHBK"; variant = "Chops"; role = "SL"; custom = "Standard";};
+        class T17_HelmetHBK_Headset_SL_B { model = "T17_HelmetHBK"; variant = "Headset"; role = "SL"; custom = "Standard";};
+        class T17_HelmetHBK_Medic_B { model = "T17_HelmetHBK"; variant = "Standard"; role = "Medic"; custom = "Standard";};
+        class T17_HelmetHBK_Ear_Medic_B { model = "T17_HelmetHBK"; variant = "Ear"; role = "Medic"; custom = "Standard";};
+        class T17_HelmetHBK_Chops_Medic_B { model = "T17_HelmetHBK"; variant = "Chops"; role = "Medic"; custom = "Standard";};
+        class T17_HelmetHBK_Headset_Medic_B { model = "T17_HelmetHBK"; variant = "Headset"; role = "Medic"; custom = "Standard";};
+        class T17_HelmetHBK_Headset_Puppy_B { model = "T17_HelmetHBK"; variant = "Headset"; role = "Standard"; custom = "Puppy";};
         class T17_HelmetHBK_Headset_Queen { model = "T17_HelmetHBK"; variant = "Chops"; role = "SL"; custom = "Queen";};
 // Helicopter Stuff
         class T17_Helmet_Heli_01_Pilot { model = "T17_Helmet_Heli_01"; role = "Pilot"; visor = "Down"; custom = "Standard";};
@@ -77,10 +77,10 @@ class XtdGearInfos
         class T17_Helmet_Heli_01_Crew_Raised { model = "T17_Helmet_Heli_01"; role = "Crew"; visor = "Raised"; custom = "Standard";};
         class T17_Helmet_Heli_01_Crew_Nyx { model = "T17_Helmet_Heli_01"; role = "Pilot"; visor = "Down"; custom = "Nyx";};
 // Berets
-        class T17_Beret_01_B { model = "T17_Beret_01"; variant = "Base"; };
+        class T17_Beret_01_B { model = "T17_Beret_01"; variant = "Standard"; };
         class T17_Beret_01_Headset_B { model = "T17_Beret_01"; variant = "Headset"; };
 // Boonies
-        class T17_Boonie_01_B { model = "T17_Boonie_01"; variant = "Base"; };
+        class T17_Boonie_01_B { model = "T17_Boonie_01"; variant = "Standard"; };
         class T17_Boonie_01_Headset_B { model = "T17_Boonie_01"; variant = "Headset"; };
     };
     class CfgGlasses 

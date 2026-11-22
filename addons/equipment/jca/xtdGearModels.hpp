@@ -13,7 +13,7 @@ class xtdGearModels
                 label = "Rig Variant";
                 values[] = 
                 {
-                    "Base",
+                    "Standard",
                     "Light",
                     "Heavy",
                     "Combat",
@@ -26,18 +26,18 @@ class xtdGearModels
                     "Tactical",
                     "Security"
                 };
-                class Base {label="Base";};
-                class Light {label="Lite";};
-                class Heavy {label="GL Rig";};
-                class Combat {label="Combat Rig";};
-                class Command {label="Command Rig";};
-                class Compact {label="Compact Vest";};
-                class CQB {label="CQB Rig";};
-                class Crew {label="Crew Vest";};
+                class Standard {label="Standard";};
+                class Light {label="Light";};
+                class Heavy {label="Heavy";};
+                class Combat {label="Combat";};
+                class Command {label="Command";};
+                class Compact {label="Compact";};
+                class CQB {label="CQB";};
+                class Crew {label="Crew";};
                 class Holster {label="Holster";};
-                class Recon {label="Recon Rig";};
-                class Tactical {label="Tactical Rig";};
-                class Security {label="Security Rig";};
+                class Recon {label="Recon";};
+                class Tactical {label="Tactical";};
+                class Security {label="Security";};
             };
 
             class squad 
@@ -75,8 +75,8 @@ class xtdGearModels
             class variant
             {
                 label = "Attachment";
-                values[] = {"Base", "Ear", "Chops", "Headset"};
-                class Base {label="Base";};
+                values[] = {"Standard", "Ear", "Chops", "Headset"};
+                class Standard {label="Standard";};
                 class Ear {label="Ear Protectors";};
                 class Chops {label="Chops";};
                 class Headset {label="Headset";};
@@ -84,16 +84,16 @@ class xtdGearModels
             class role 
             {
                 label = "Role";
-                values[] = {"Base", "SL", "Medic"};
-                class Base {label="Black";};
+                values[] = {"Standard", "SL", "Medic"};
+                class Standard {label="Black";};
                 class SL {label="Squad Lead";};
                 class Medic {label="Medic";};
             };
             class custom
             {
                 label = "Custom";
-                values[] = {"Base", "Puppy", "Queen"};
-                class Base {label="Base";};
+                values[] = {"Standard", "Puppy", "Queen"};
+                class Standard {label="Standard";};
                 class Puppy {label="Puppy";};
                 class Queen {label="Queen";};
             };
@@ -134,8 +134,8 @@ class xtdGearModels
             class variant 
             {
                 label = "Variant";
-                values[] = {"Base", "Headset"};
-                class Base {label="Black";};
+                values[] = {"Standard", "Headset"};
+                class Standard {label="Black";};
                 class Headset {label="Black, Headset";};
             };
         };
@@ -147,8 +147,8 @@ class xtdGearModels
             class variant 
             {
                 label = "Variant";
-                values[] = {"Base", "Headset"};
-                class Base {label="Black";};
+                values[] = {"Standard", "Headset"};
+                class Standard {label="Black";};
                 class Headset {label="Black, Headset";};
             };
         };
