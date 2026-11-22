@@ -13,7 +13,8 @@ class CfgPatches
 		requiredVersion = 2.22;
 		units[] = 
         {
-			"T17_CombatUniform_B_Vehicle"
+			"T17_CombatUniform_B_Vehicle",
+			"Vehicle_T17_Pike_Launcher"
         };
 		weapons[] = 
         {
@@ -100,7 +101,9 @@ class CfgPatches
 			"T17_Helmet_Heli_01_Crew",
 			"T17_Helmet_Heli_01_Crew_Raised",
 
-			"T17_Helmet_Heli_01_Crew_Nyx"
+			"T17_Helmet_Heli_01_Crew_Nyx",
+
+			"T17_Pike_Launcher"
 		};
         skipWhenMissingDependencies = 1;
     };
@@ -127,6 +130,25 @@ class CfgVehicles
             "z\t17\addons\equipment\jca\textures\CombatUniform_01_B_co.paa",
         };
     };
+// Launchers
+	class Weapon_JCA_launch_Mk153_black_F;
+	class Vehicle_T17_Pike_Launcher: Weapon_JCA_launch_Mk153_black_F
+	{
+		displayName = "Protoype Pike Launcher";
+		scope = 2;
+		scopeCurator = 2;
+		author = "Scout";
+		vehicleClass = "WeaponsSecondary";
+		class TransportWeapons
+		{
+			class T17_Pike_Launcher
+			{
+				weapon = "T17_Pike_Launcher";
+				count = 1;
+			};
+		};
+		class TransportMagazines{};
+	};
 };
 
 class CfgWeapons
@@ -871,6 +893,17 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"\z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_Nyx_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Glass_ca.paa","",""};
 		t17_raven = 1;
 	};
+// Launchers
+	class JCA_launch_Mk153_black_F;
+	class T17_Pike_Launcher: JCA_launch_Mk153_black_F
+	{
+		author = "Scout";
+		scope = 2;
+		displayName = "Protoype Pike Launcher";
+		magazines[] = {"T17_Pike_Magazine"};
+		magazineWell[] = {"T17_Pike_Magwell"};
+		baseWeapon = "T17_Pike_Launcher";
+	};
 };
 
 class CfgGlasses
@@ -938,3 +971,77 @@ class CfgGlasses
 
 #include "XtdGearModels.hpp"
 #include "XtdGearInfos.hpp"
+
+
+class CfgMagazineWells
+{
+    class T17_Pike_Magwell
+    {
+        BI_Magazines[] = {"T17_Pike_Magazine"};
+    };
+};
+
+class CfgMagazines
+{
+    class JCA_MK153_HEAT_F;
+    class T17_Pike_Magazine: JCA_MK153_HEAT_F
+    {
+		author = "Scout";
+        displayName = "Pike Round";
+        count = 1;
+        descriptionShort = "Pike";
+        weaponpoolavailable = 1;
+		ammo = "T17_Pike_Ammo";
+		scope = 2;
+		mass = 40;
+		deleteIfEmpty = 0;
+    };
+};
+
+class CfgAmmo
+{
+	class JCA_R_MK153_HEAT_F;
+	class MissileBase;
+	class T17_Pike_Ammo: MissileBase
+	{
+		simulation = "shotMissile";
+        model = "\A3\Weapons_F\Ammo\Rocket_01_fly_F";
+        manualControl = 0;
+        canLock = 0;
+        airLock = 0;
+        irLock = 0;
+        laserLock = 0;
+        weaponLockSystem = 0;
+        hit = 50;
+        indirectHit = 40;
+        indirectHitRange = 4;
+        initTime = 0.15;
+        thrustTime = 3.0;
+        thrust = 160;
+        maxSpeed = 220;
+        timeToLive = 25;
+        maneuvrability = 0;
+        airFriction = 0.05;
+        sideAirFriction = 0.05;
+    	whistleDist=30;
+		class ace_missileguidance 
+		{
+            enabled = 1;
+            pitchRate = 30;
+            yawRate = 30;
+            defaultSeekerType = "SACLOS";
+            seekerTypes[] = { "SACLOS" };
+            defaultSeekerLockMode = "LOAL";
+            seekerLockModes[] = { "LOAL" };
+            seekerAngle = 90;
+            seekerAccuracy = 1;
+            seekerMinRange = 10;
+            seekerMaxRange = 2500;
+            defaultAttackProfile = "WIRE";
+            attackProfiles[] = { "WIRE" };
+            defaultNavigationType = "Line";
+            navigationTypes[] = { "Line" };
+            navigationGain = 3;
+        };
+	};
+};
