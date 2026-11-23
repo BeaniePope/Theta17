@@ -891,6 +891,7 @@ class CfgWeapons
 		scope = 2;
 		displayName = "Foundation Heli Pilot Helmet (Nyx)";
 		hiddenSelectionsTextures[] = {"\z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_Nyx_co.paa","z\t17\addons\equipment\jca\textures\Helmet_Heli_01_Glass_ca.paa","",""};
+		hiddenSelectionsMaterials[] = {"\z\t17\addons\equipment\jca\textures\Helmet_Heli_01_B_Nyx.rvmat","headwear_f_JCA_IE\Data\H_Helmet_Heli_01\H_Helmet_Heli_01_glass.rvmat","",""};
 		t17_raven = 1;
 	};
 // Launchers
