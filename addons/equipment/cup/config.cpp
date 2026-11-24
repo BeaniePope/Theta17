@@ -84,7 +84,6 @@ class CfgVehicles
 		faction = "CUP_B_US_Army";
 		crew = "CUP_B_US_Pilot";
 		typicalCargo[] = {"CUP_B_US_Pilot"};
-		hiddenSelectionsTextures[] = {"cup\airvehicles\cup_airvehicles_uh60\data\uh60m_fuselage_co.paa","cup\airvehicles\cup_airvehicles_uh60\data\uh60m_engine_co.paa","cup\airvehicles\cup_airvehicles_uh60\data\default_co.paa"};
 		editorPreview = "CUP\AirVehicles\CUP_AirVehicles_UH60\Data\preview\CUP_B_MH60L_DAP_4x_Multi_US.jpg";
 		maximumLoad = 1000;
 		class TransportWeapons {};
