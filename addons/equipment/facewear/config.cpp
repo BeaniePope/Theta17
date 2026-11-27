@@ -28,7 +28,7 @@ class CfgGlasses
 		dlc = "T17";
 		author = "Scout";
 		displayName = "Balaclava";
-		scope = 2;
+		scope = 0; // Queen hates me
         model = "\z\t17\addons\equipment\facewear\models\balaclava.p3d";
 		identityTypes[] = {};
 		hiddenSelections[] = {"balaclava"};
